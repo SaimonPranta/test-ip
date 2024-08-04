@@ -1,0 +1,100 @@
+import * as React from "react";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import ClearIcon from "@material-ui/icons/Clear";
+import CustomeButton from "../../../Utils/CustomeButton";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "63%",
+  transform: "translate(-50%, -50%)",
+  width: 500,
+  height: 200,
+  bgcolor: "background.paper",
+  border: "1px solid #059862",
+  boxShadow: "5 10 8 10 #888888",
+  borderRadius: 2,
+  boxShadow: 24,
+  p: 4,
+};
+const title = {
+  fontSize: "18px",
+  fontWeight: 500,
+  color: "#000000",
+};
+
+export default function CancelModal({ goToPreviousPath }) {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const CancelHandler = () => {
+    handleOpen();
+  };
+  //   goToPreviousPath();
+
+  return (
+    <div>
+      {/* <Button onClick={handleOpen}>Open modal</Button> */}
+      <div
+        className="closeBtn"
+        onClick={CancelHandler}
+        style={{
+          width: "30px",
+          height: "30px",
+          border: "1px solid #80808000",
+          borderRadius: "50%",
+          backgroundColor: "transparent",
+          textAlign: "center",
+          display: "flex",
+          color: "black",
+          justifyContent: "center",
+        }}
+      >
+        <ClearIcon
+          style={{
+            fontSize: "30px",
+            alignSelf: "center",
+          }}
+        />
+      </div>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <p style={title}>Do you want to discard your story?</p>
+          <br />
+          <br />
+
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            {/* <button
+              onClick={() => setOpen(false)}
+              variant="outlined"
+              color="error"
+            >
+              No
+            </button> */}
+
+            <span onClick={() => setOpen(false)}>
+              <CustomeButton title="No" />
+            </span>
+            <span onClick={() => goToPreviousPath()}>
+              <CustomeButton title="Yes" />
+            </span>
+            {/* <button onClick={() => goToPreviousPath()} variant="contained">
+              Yes
+            </button> */}
+          </div>
+        </Box>
+      </Modal>
+      
+    </div>
+  );
+}

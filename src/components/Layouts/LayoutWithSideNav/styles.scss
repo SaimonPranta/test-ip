@@ -1,0 +1,132 @@
+
+
+:root {
+  --common-border-color: #e4e4e4;
+}
+
+%side-navigation-common-style {
+  transition: .5s ease-in-out;
+  overflow-y: hidden;
+  overflow-x: visible;
+  height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  align-items: start;
+  gap: 0;
+  overflow: hidden;
+
+  .side-navigation {
+    @extend %side-navigation-common-style;
+    width: 250px;
+    border-right: 1.5px solid #ebe9e9;
+  }
+
+  .main-page {
+    flex-grow: 1;
+    transition: .5s ease-in-out;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+
+    .main-content {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 0px 15px;
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+
+  .chat-section {
+    @extend %side-navigation-common-style;
+    background-color: #fff;
+    width: 300px;
+    border-left: 1.5px solid #ebe9e9;
+    display: flex;
+    flex-direction: column;
+
+    .top-content {
+      flex-grow: 1;
+      padding: 20px 15px 20px 10px;;
+      
+    }
+
+    .improve-feature-section {
+      width: 100%;
+  
+      div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0;
+        border: 1px solid #e9e9e9;
+  
+        p {
+          border: 0;
+          border-radius: 0;
+  
+          a {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #000;
+            transition: 0.3s;
+            border: 0;
+            border-radius: 0;
+  
+            &.active {
+              background-color: #0048ba;
+              color: #ffffff;
+            }
+  
+            &:hover {
+              background-color: #0048ba;
+              color: #ffffff;
+            }
+  
+            span {
+              font-size: 12px;
+              border: 0;
+              border-radius: 0;
+            }
+          }
+        }
+  
+        p:nth-child(1) {
+          border-right: 1px solid #d5d5d5;
+        }
+  
+      }
+    }
+  
+    .text-style {
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+}
+
+.disable-left-side-nav {
+  .page-container {
+    .side-navigation {
+      margin-left: -250px;
+    }
+  }
+}
+
+.disable-right-side-nav {
+  .page-container {
+    .chat-section {
+      margin-right: -300px;
+    }
+  }
+}

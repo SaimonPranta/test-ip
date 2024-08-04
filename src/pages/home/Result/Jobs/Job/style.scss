@@ -1,0 +1,89 @@
+.job {
+  border: 3px solid #000000;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  font-family: "Caladea", serif;
+  .job-header {
+    text-align: center;
+
+    .job-name {
+      width: 100%;
+      font-size: 26px;
+      font-weight: 900;
+      font-family: "Caladea", serif;
+    }
+
+    .company-name {
+      margin-top: 5px;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: "Caladea", serif;
+    }
+  }
+
+  .job-body {
+    margin-top: 22px;
+
+    .salary-range,
+    .job-skills,
+    .skill {
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Caladea", serif;
+    }
+
+    .skill {
+      margin-top: 8px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  .job-footer {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .company-location,
+    .job-deadline {
+      font-size: 16px;
+      font-weight: bolder;
+      font-family: "Caladea", serif;
+    }
+
+    .apply-deadline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        font-size: 12px;
+        font-weight: 600;
+        background-color: var(--default-color);
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 6px 12px;
+        color: #ffffff;
+      }
+    }
+  }
+  &-type {
+    position: absolute;
+    background: #000;
+    color: #ffffff;
+    transform: rotate(-90deg);
+    right: -45px;
+    bottom: 50%;
+
+    p {
+      font-size: 13px;
+      font-weight: bold;
+      font-family: "Caladea", serif;
+      padding: 1px 5px;
+      min-width: 116px;
+      text-align: center;
+    }
+  }
+}

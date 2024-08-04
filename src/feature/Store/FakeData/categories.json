@@ -1,0 +1,105 @@
+[
+    {
+        "id": "01",
+        "cateName": "Food",
+        "cateImg": "https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&q=low&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            {
+                "cateName": "Food 2",
+                "cateImg": "https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&q=low&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Food 3",
+                "cateImg": "https://chaldn.com/_mpimage/food?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95785&q=low&v=1&m=40&webp=1&alpha=1"
+            }
+        ]
+    },
+    {
+        "id": "02",
+        "cateName": "Cleaning Supplies",
+        "cateImg": "https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&q=best&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            {
+                "cateName": "Cleaning Supplies 2",
+                "cateImg": "https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&q=best&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Cleaning Supplies 3",
+                "cateImg": "https://chaldn.com/_mpimage/cleaning-supplies?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95783&q=best&v=1&m=40&webp=1&alpha=1"
+            }
+        ]
+    },
+    {
+        "id": "03",
+        "cateName": "Personal Care",
+        "cateImg": "https://chaldn.com/_mpimage/personal-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101765&q=low&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            
+        ]
+    },
+    {
+        "id": "04",
+        "cateName": "Health & Wellness",
+        "cateImg": "https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&q=best&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            {
+                "cateName": "Health & Wellness 2",
+                "cateImg": "https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&q=best&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Health & Wellness 3",
+                "cateImg": "https://chaldn.com/_mpimage/health-wellness?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95788&q=best&v=1&m=40&webp=1&alpha=1"
+            }
+        ]
+    },
+    {
+        "id": "05",
+        "cateName": "Baby Care",
+        "cateImg": "https://chaldn.com/_mpimage/baby-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95781&q=best&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+        
+        ]
+    },
+    {
+        "id": "06",
+        "cateName": "Home & Kitchen",
+        "cateImg": "https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&q=best&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            {
+                "cateName": "Home & Kitchen 2",
+                "cateImg": "https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&q=best&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Home & Kitchen 3",
+                "cateImg": "https://chaldn.com/_mpimage/home-kitchen?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95787&q=best&v=1&m=40&webp=1&alpha=1"
+            }
+        ]
+    },
+    {
+        "id": "07",
+        "cateName": "Pet Care",
+        "cateImg": "https://chaldn.com/_mpimage/pet-care?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D95789&q=best&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+       
+        ]
+    },
+    {
+        "id": "08",
+        "cateName": "Fashion & Lifestyle",
+        "cateImg": "https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&q=low&v=1&m=40&webp=1&alpha=1",
+        "subCategory": [
+            {
+                "cateName": "Fashion & Lifestyle 2",
+                "cateImg": "https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&q=low&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Fashion & Lifestyle 3",
+                "cateImg": "https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&q=low&v=1&m=40&webp=1&alpha=1"
+            },
+            {
+                "cateName": "Fashion & Lifestyle 4",
+                "cateImg": "https://chaldn.com/_mpimage/fashion-lifestyle?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D101371&q=low&v=1&m=40&webp=1&alpha=1"
+            }
+        ]
+    }
+]

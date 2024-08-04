@@ -1,0 +1,65 @@
+:root {
+  --common-border-color: #e4e4e4;
+}
+
+%side-navigation-common-style {
+  transition: .5s ease-in-out;
+  overflow-y: hidden;
+  overflow-x: visible;
+  height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  align-items: start;
+  gap: 0;
+  overflow: hidden;
+
+  .side-navigation {
+    @extend %side-navigation-common-style;
+    width: 250px;
+    border-right: 1.5px solid #ebe9e9;
+  }
+
+  .main-page {
+    flex-grow: 1;
+    transition: .5s ease-in-out;
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    .main-content{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 0px 40px;
+      overflow-y: auto;
+      height: 100%;
+    }
+  }
+
+  .chat-section {
+    @extend %side-navigation-common-style;
+    background-color: #fff;
+    width: 300px;
+    padding-left: 10px;
+    padding: 20px 20px 20px 10px;
+    border-left: 1.5px solid #ebe9e9;
+  }
+}
+
+.disable-left-side-nav {
+  .page-container {
+    .side-navigation {
+      margin-left: -250px;
+    }
+  }
+}
+
+.disable-right-side-nav {
+  .page-container {
+    .chat-section {
+      margin-right: -300px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.display-home-video-tabs-img {
+    height: 156px;
+    width: 100%;
+}
+
+.MuiTypography-displayBlock{
+    position: relative;
+}
+
+.display-ads-sponsord{
+    position: absolute;
+    margin-left: 72%;
+    margin-top: -15px;
+    background-color: red;
+    z-index: 1000;
+    padding: 0px 5px;
+    color: white;
+    font-size: 10px;
+}

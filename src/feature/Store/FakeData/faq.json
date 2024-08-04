@@ -1,0 +1,109 @@
+[
+    {   
+        "id": 1,
+        "question": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+        "username": "test_dev"
+    },
+    {   
+        "id": 2,
+        "question": "How tall is the rear portion of this unit (where the weight stack is)? Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin Lorem Ipsum is not simply random text. It has roots in a piece of classical LatinLorem Ipsum is not simply random text. It has roots in a piece of classical Latin",
+        "answer": "At the rear of the machine, the height is 70 inches. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form accompanied by English versions from the 1914 translation by H. Rackham",
+        "like":[
+                 {"id": 1,"username": "test_dev", "name": "test dev"},
+                 {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                 {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                ],
+        "date": "January 18, 2017",
+        "username": "test_dev_1",
+        "reply_comment": [
+            {
+                "id":1,
+                "answer": "Width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form accompanied by English versions from the 1914 translation by H. Rackham",
+                "like":[
+                        {"id": 1,"username": "test_dev", "name": "test dev"},
+                        {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                        {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                        ],
+                "date": "August 6, 2017"
+            },
+            {
+                "id": 2,
+                "answer": "Tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                         {"id": 1,"username": "test_dev", "name": "test dev"},
+                         {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                         {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                         ],
+                "date": "August 6, 2018"
+            },
+            {
+                "id": 3,
+                "answer": "Only that houses the weight stack? i'm preparing the spaced before it arrives, information helpful.",
+                "like": [
+                        {"id": 1,"username": "test_dev", "name": "test dev"},
+                        {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                        {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                        ],
+                "date": "August 6, 2018"
+            }
+        ]
+    },
+    {   
+        "id": 3,
+        "question": "Is the 200lb stack already included? Or do I need to buy it separately?",
+        "answer": "It is included. They ship in multiple boxes.",
+        "like": [
+                 {"id": 1,"username": "test_dev", "name": "test dev"},
+                 {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                 {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                 ],
+        "date": "August 10, 2018",
+        "username": "test_dev_2",
+        "reply_comment": [
+            {
+                "id": 1,
+                "answer": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like":[
+                         {"id": 1,"username": "test_dev", "name": "test dev"},
+                         {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                         {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                        ],
+                "date": "August 6, 2016"
+            }
+        ]
+    },
+    {   
+        "id": 4,
+        "question": "How much weight can you upgrade too?",
+        "answer": "you cannot add more weights to it. it comes with 200 lbs of weights which produce 270 lbs of resistance for the bench press.",
+        "like": [
+                    {"id": 1,"username": "test_dev", "name": "test dev"},
+                    {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                    {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                ],
+        "date": "April 13, 2016",
+        "username": "test_dev_3", 
+        "reply_comment": [
+            {
+                "id": 1,
+                "answer": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                        {"id": 1,"username": "test_dev", "name": "test dev"},
+                        {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                        {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                        ],
+                "date": "August 6, 2016"
+            },
+            {
+                "id": 2,
+                "answer": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                            {"id": 1,"username": "test_dev", "name": "test dev"},
+                            {"id": 2,"username": "test_dev_1", "name": "test dev"},
+                            {"id": 3,"username": "test_dev_1", "name": "test dev"}
+                        ],
+                "date": "August 6, 2016"
+            }
+        ]
+    }
+]

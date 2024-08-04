@@ -1,0 +1,675 @@
+.profile-note-container-section {
+  margin-top: 10px;
+  color: #000;
+  .note-container-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+
+    .note-container-box {
+      .note-box {
+        position: relative;
+
+        .image-design {
+          cursor: pointer;
+          height: 162px;
+          width: 100%;
+        }
+
+        .open-porper-modal {
+          .top-section {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .image-uploader {
+              img {
+                margin-top: 5px;
+                margin-left: 5px;
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+              }
+            }
+          }
+          .notes-bottom-section {
+            margin-bottom: 5px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .time {
+              margin-left: 5px;
+            }
+
+            .active-privacy-section {
+              margin-right: 5px;
+              cursor: pointer;
+              .MuiSvgIcon-root {
+                width: 0.7em;
+              }
+            }
+            .deactive-privacy-section {
+              margin-right: 5px;
+              cursor: pointer;
+              pointer-events: none;
+              opacity: 0.7;
+              .MuiSvgIcon-root {
+                width: 0.7em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.create-note-header-section {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+
+  .title-input-field {
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .webAddress-provider-section {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    .webAddress-active-link-color {
+      width: 85%;
+      height: 40px;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 15px;
+      border: 1px solid #e4e4e4;
+    }
+    .webAddress-deactive-link-color {
+      width: 85%;
+      height: 40px;
+      border: 1px solid red;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .create-note-save-btn-active {
+      background-color: #0048ba;
+      font-weight: 900;
+      color: #ffffff;
+      padding: 5.6px 50px;
+      font-size: 15px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+      border: 1px solid #e4e4e4;
+      transition: 0.1s ease-in-out;
+    }
+
+    .create-note-save-btn-deactive {
+      background-color: #fafafa;
+      font-weight: 900;
+      height: 40px;
+      color: #1d1d1d;
+      padding: 5.6px 50px;
+      font-size: 15px;
+      opacity: 0.5;
+      border: none;
+      cursor: initial;
+      border-radius: 10px;
+      border: 1px solid #e4e4e4;
+      transition: 0.1s ease-in-out;
+    }
+  }
+}
+
+.note-modal-main-section {
+  padding-top: 10px;
+
+  .id-label {
+    background-color: #e4e4e4;
+    padding: 10px 18px;
+    margin-right: -30px;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .title-label {
+    background-color: #e4e4e4;
+    padding: 10px;
+    margin-right: -30px;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .url-label {
+    background-color: #e4e4e4;
+    padding: 10px 15px;
+    margin-right: -30px;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .id-input-field {
+    width: 96%;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    padding-left: 35px;
+  }
+
+  .title-input-field {
+    width: 95%;
+    margin-top: 1rem;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    padding-left: 35px;
+  }
+
+  .hyperlink-input-field {
+    width: 96%;
+    margin-top: 1rem;
+    border: 1px solid #e4e4e4;
+    height: 40px;
+    // border-radius: 4px;
+    padding-left: 35px;
+  }
+
+  .modal-button-section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
+    .custom-button {
+      background: transparent;
+      border: 1px solid #bebebe;
+      padding: 2px 10px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.75;
+      border-radius: 4px;
+      letter-spacing: 0.02857em;
+      text-transform: capitalize;
+      &:hover {
+        background: #3f51b5;
+        transition: 0.5s;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.ql-snow a {
+  color: #0048ba !important;
+}
+.ql-snow .ql-tooltip {
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 5px #ddd;
+  color: #444;
+  padding: 5px 12px;
+  white-space: nowrap;
+  position: absolute !important;
+  transform: translateX(43%) !important;
+}
+.ql-snow .ql-picker.ql-font {
+  max-width: 126px;
+}
+
+.ql-snow .ql-tooltip {
+  margin-top: 2px !important;
+}
+.ql-toolbar.ql-snow {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "system-ui";
+  padding: 0px !important;
+  margin: 0 10px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+// font label style and content added
+
+// .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='12px']::before {
+//   content: 'Size';
+//   font-size: 16px !important;
+// }
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="5px"]::before {
+  content: "5px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="8px"]::before {
+  content: "8px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="10px"]::before {
+  content: "10px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="15px"]::before {
+  content: "15px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="20px"]::before {
+  content: "20px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="25px"]::before {
+  content: "25px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="30px"]::before {
+  content: "30px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="35px"]::before {
+  content: "35px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="40px"]::before {
+  content: "40px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="45px"]::before {
+  content: "45px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="50px"]::before {
+  content: "50px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="55px"]::before {
+  content: "55px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="60px"]::before {
+  content: "60px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="65px"]::before {
+  content: "65px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="70px"]::before {
+  content: "70px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="75px"]::before {
+  content: "75px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="80px"]::before {
+  content: "80px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="85px"]::before {
+  content: "85px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="90px"]::before {
+  content: "90px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="95px"]::before {
+  content: "95px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="100px"]::before {
+  content: "100px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="200px"]::before {
+  content: "200px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="300px"]::before {
+  content: "300px";
+  font-size: 16px !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-item[data-value="400px"]::before {
+  content: "400px";
+  font-size: 16px !important;
+}
+/* .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='500px']::before {
+  content: '500px';
+  font-size: 16px !important;
+} */
+.ql-snow .ql-picker.ql-size .ql-picker-label::before {
+  content: "Size" !important;
+}
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='12px']::before {
+//   content: 'Size' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='8px']::before {
+//   content: '8px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='5px']::before {
+//   content: '5px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='10px']::before {
+//   content: '10px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='15px']::before {
+//   content: '15px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='20px']::before {
+//   content: '20px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='25px']::before {
+//   content: '25px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='30px']::before {
+//   content: '30px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='35px']::before {
+//   content: '35px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='40px']::before {
+//   content: '40px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='45px']::before {
+//   content: '45px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='50px']::before {
+//   content: '50px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='55px']::before {
+//   content: '55px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='60px']::before {
+//   content: '60px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='65px']::before {
+//   content: '65px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='70px']::before {
+//   content: '70px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='75px']::before {
+//   content: '75px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='80px']::before {
+//   content: '80px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='85px']::before {
+//   content: '85px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='90px']::before {
+//   content: '90px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='95px']::before {
+//   content: '95px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='100px']::before {
+//   content: '100px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='200px']::before {
+//   content: '200px' !important;
+// }
+
+// .ql-snow .ql-picker.ql-size .ql-picker-label[data-value='300px']::before {
+//   content: '300px' !important;
+// }
+
+.ql-toolbar.ql-snow {
+  border: 1px solid rgba(199, 199, 199, 80%) !important;
+  box-sizing: border-box;
+  font-family: "system-ui";
+  padding: 5px;
+  margin: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #000 !important;
+}
+.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: #000 !important;
+  z-index: 2;
+}
+.ql-container.ql-snow {
+  border: 1px solid rgba(204, 204, 204, 0) !important;
+}
+
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 15px;
+  align-items: center !important;
+  display: flex !important;
+  font: -webkit-small-control !important;
+}
+button.ql-list {
+  border: none !important;
+  margin: 0px 0px !important;
+}
+button.ql-indent {
+  margin: 0px 15px 0px 0px !important;
+}
+
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 24px;
+  padding: 3px 0px;
+  width: 46px;
+  border-right: 2px solid #e4e4e4;
+  margin: 0px 15px;
+}
+.NoteActionOption {
+  width: 100%;
+  color: #444343;
+  padding: 9px;
+  display: flex;
+  justify-content: start;
+  font-size: 18px;
+  align-items: center;
+}
+.NoteActionOption svg {
+  margin-right: 5px;
+}
+.NoteActionOption:hover {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.UserContent {
+  margin-bottom: 10px !important;
+}
+.MuiPaper-elevation8 {
+  box-shadow: none !important;
+  border: 1px solid #e4e4e4 !important;
+  padding: 1px !important;
+}
+// SubmitNote button
+.SubmitNote {
+  bottom: 5px;
+  // height: 100%;
+}
+
+.quillMainDiv {
+  position: relative;
+}
+
+.quillMainDiv .editorSubmit {
+  position: absolute;
+  right: 19px !important;
+  top: 8.5px !important;
+}
+.ql-snow .ql-editor a {
+  text-decoration: none !important;
+}
+
+.ql-snow a {
+  color: #ff0000 !important;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after,
+.ql-remove {
+  border-right: 0px;
+  content: "Save";
+  padding-right: 0px;
+  color: black !important;
+}
+.ql-snow .ql-tooltip a.ql-action::after {
+  margin-left: 8px;
+  color: black;
+}
+.ql-snow .ql-tooltip a.ql-remove::before {
+  margin-left: 8px;
+  color: black;
+}
+.ql-align .ql-picker .ql-icon-picker {
+  margin: 8px 0px !important;
+  padding: 1px -1px !important;
+  left: -14px !important;
+}
+.ql-snow .ql-picker.ql-header .ql-picker-label::before,
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  content: "Normal";
+  width: 100px !important;
+}
+.ql-snow * {
+  box-sizing: border-box;
+  left: -8px !important;
+}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border-color: #fff !important;
+}
+
+.ql-editor ul,
+ol {
+  padding-left: 0.25rem !important;
+}
+
+.ql-indent-1 {
+  padding-left: 2.5rem !important;
+}
+// SubmitNote button
+
+// pagination section
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paginationItem {
+  background: #fff;
+  border: 2px solid #666;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.paginationItem span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev,
+.next {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  color: rgb(15, 15, 15);
+  box-shadow: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.paginationItem.active {
+  border: 1px solid #e4e4e4;
+  color: #323232;
+  font-size: 20px;
+  pointer-events: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
+// pagination section
+.MuiBackdrop-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: -1;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0) !important;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiPaper-elevation24 {
+  border: 1px solid rgba(221, 221, 221, 0.678);
+  box-shadow: none !important;
+}
+.ql-align,
+.ql-color,
+.ql-background {
+  margin: 8px;
+  padding: 1px 0px;
+  border-right: 2px solid #e4e4e4 !important;
+}
+.ql-snow .ql-color-picker,
+.ql-snow .ql-icon-picker {
+  width: 35px !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.1;
+}
+
+.modal-content {
+  border: none;
+}

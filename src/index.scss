@@ -1,0 +1,244 @@
+@import "./assets/fonts/OpenSans-Regular.ttf";
+@import "./assets/fonts/OpenSans-Bold.ttf";
+@import "./assets/fonts/Roboto-Regular.ttf";
+@import "./assets/fonts/Roboto-Bold.ttf";
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+// quill editor er custome fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Enriqueta:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+
+// common-styles
+@import "./shared/common-styles/packge-custom-styles.scss";
+
+
+:root {
+  --default-color: #0048ba;
+}
+
+* {
+  // font-family: 'PT Serif', serif;
+  // font-weight: bold;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+  }
+}
+.MuiAutocomplete-root fieldset:hover {
+  border-color: #2196f3 !important;
+}
+h2,
+p,
+span {
+  font-family: "system-ui";
+}
+html,
+body {
+  // overflow-y: scroll !important ;
+  font: {
+    // font-family: 'system-ui'; // 400, 700
+    size: 14px;
+    weight: 400;
+  }
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+code {
+  font-family: system-ui;
+}
+a {
+  transition: all 0.3s;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+img,
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+.grecaptcha-badge {
+  z-index: -1;
+  opacity: 0.5;
+}
+// .MuiPaper-root,
+// .MuiMenu-paper {
+// }
+.fadeIn {
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+input.fileInput {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -999;
+  opacity: 0;
+}
+.MuiMenu-list {
+  padding: 0 !important;
+}
+#MuiDialogContent-root {
+  padding-top: 0 !important;
+}
+.border {
+  border: 1px solid #e4e4e4;
+}
+.borderR {
+  border: 1px solid red;
+}
+.borderG {
+  border: 1px solid green;
+}
+
+.MuiListItemText-multiline {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  display: flex !important;
+  align-items: center !important;
+}
+.MuiListItemText-root p {
+  font-size: 13px !important;
+  padding-left: 8px !important;
+  color: black;
+  font-weight: bold !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #0048ba !important;
+}
+.c-primary {
+  color: #0048ba !important;
+}
+.c-danger {
+  color: #c4361d !important;
+}
+.c-warning {
+  color: #d18f00 !important;
+}
+.c-success {
+  color: #00b64c !important;
+}
+.c-black {
+  color: #000000 !important;
+}
+.cwidth {
+  width: 80px;
+}
+.cwidthp {
+  width: 200px;
+}
+.cwidthI {
+  padding: 0px 10px;
+}
+.prodDiv {
+  display: flex;
+  overflow: scroll;
+}
+
+.btn-lights {
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 4px;
+  color: #000000;
+  min-width: 150px;
+  max-height: 35px;
+  overflow-x: hidden;
+}
+.cWidth {
+  min-width: 150px;
+  max-height: 35px;
+  overflow-x: hidden;
+}
+.css-1wnsr1i {
+  height: 800px !important;
+  width: 800px !important;
+}
+.css-1xv07y1-MuiGrid-root {
+  max-width: 100% !important;
+  text-align: right !important;
+}
+
+//jchecking
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+$color-white: #ffffff;
+$color-dark: #333;
+$default-color: var(--default-color);
+
+

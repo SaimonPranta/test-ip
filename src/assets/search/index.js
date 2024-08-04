@@ -1,0 +1,12 @@
+export { default as PeopleIcon } from './People.png';
+export { default as AudioIcon } from './Audio.png';
+export { default as GroupIcon } from './Group.png';
+export { default as ImageIcon } from './Image.png';
+export { default as VideoIcon } from './Video.png';
+export { default as NoteIcon } from './Note.png';
+export { default as PostIcon } from './Post.png';
+export { default as WebIcon } from './Web.png';
+export { default as CampaignsIcon } from './campaing.png';
+export { default as JobsIcon } from './jobs.png';
+export { default as StoreIcon } from './store.png';
+export { default as InvestorIcon } from './investor.png';

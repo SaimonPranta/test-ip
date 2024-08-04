@@ -1,0 +1,65 @@
+.cover_userProfile__2M_i- div {
+  position: absolute;
+  background-color: #00000021;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0;
+  height: 31px;
+  align-items: center;
+  bottom: -8px !important;
+}
+
+.popercustomeclass {
+  border: 1px solid #e4e4e4;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.popercustomeclass p {
+  background-color: rgb(253, 253, 253);
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+.popercustomeclass p:hover {
+  background-color: #ececec;
+  padding: 7px;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+.bio-in-cover {
+  position: relative;
+  // top: 78px;
+  margin-left: 3px;
+  margin-top: -5px;
+}
+
+.profile-photo-and-button-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 95%;
+  .button-section{
+    display: flex;
+    gap: 10px;
+    height: 35px;
+  }
+
+}
+
+.user-name-and-bio-section {
+  margin-top: 10px;
+  padding: 0px 5px;
+  position: relative;
+  // bottom: -30px;
+  left: 105px;
+  width: 100%;
+  .username{
+    display: flex;
+  }
+
+
+}

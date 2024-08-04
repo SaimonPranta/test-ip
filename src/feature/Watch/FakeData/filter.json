@@ -1,0 +1,373 @@
+[
+  {
+    "_id": "01",
+    "title": "Movie",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Bangladeshi",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Dhaka 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Dhaka 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Dhaka 3"
+                }
+            ]
+        },
+        {
+            "_id": "02",
+            "title": "India",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Delhi"
+                },
+                {
+                    "_id": "02",
+                    "title": "Kolkata"
+                },
+                {
+                    "_id": "03",
+                    "title": "Mumbai"
+                }
+            ]  
+        },
+        {
+            "_id": "03",
+            "title": "USA",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "WSA"
+                },
+                {
+                    "_id": "02",
+                    "title": "PSA"
+                },
+                {
+                    "_id": "03",
+                    "title": "TSA"
+                }
+            ]  
+        }
+    ]
+  },
+  {
+    "_id": "03",
+    "title": "Music",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Canada",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Canada 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Canada 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Canada 3"
+                }
+            ]  
+        },
+        {
+            "_id": "02",
+            "title": "Nepal",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Nepal 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Nepal 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Nepal 3"
+                }
+            ]   
+        },
+        {
+            "_id": "03",
+            "title": "Pakistan",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Pakistan 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Pakistan 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Pakistan 3"
+                }
+            ]   
+        }
+    ]
+  },
+  {
+    "_id": "04",
+    "title": "Tutorial",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Javascript",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Javascript 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Javascript 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Javascript 3"
+                }
+            ]   
+        },
+        {
+            "_id": "02",
+            "title": "Python",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Python 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Python 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Python 3"
+                }
+            ]   
+        },
+        {
+            "_id": "03",
+            "title": "Java",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Java 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Java 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Java 3"
+                }
+            ]   
+        },
+        {
+            "_id": "04",
+            "title": "Ruby",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Ruby 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Ruby 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Ruby 3"
+                }
+            ]    
+        },
+        {
+            "_id": "05",
+            "title": "MicLanguage",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "MicLanguage 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "MicLanguage 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "MicLanguage 3"
+                }
+            ]    
+        },
+        {
+            "_id": "06",
+            "title": "Spring boot",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Spring 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Spring 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Spring 3"
+                }
+            ]  
+        }
+    ]
+  },
+  {
+    "_id": "05",
+    "title": "Natok",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Kamal",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Kamal 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Kamal 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Kamal 3"
+                }
+            ]    
+        },
+        {
+            "_id": "02",
+            "title": "jamal",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "jamal 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "jamal 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "jamal 3"
+                }
+            ]   
+        },
+        {
+            "_id": "03",
+            "title": "tomal",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "tomal 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "tomal 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "tomal 3"
+                }
+            ]   
+        }
+    ]
+  },
+  {
+    "_id": "06",
+    "title": "Song",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Habib Ahsan",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Habib 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Habib 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Habib 3"
+                }
+            ]  
+        },
+        {
+            "_id": "02",
+            "title": "Atif Aslam",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Atif 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Atif 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Atif 3"
+                }
+            ]   
+        },
+        {
+            "_id": "03",
+            "title": "Nancy",
+            "childSubFilter": [
+                {
+                    "_id": "01",
+                    "title": "Nancy 1"
+                },
+                {
+                    "_id": "02",
+                    "title": "Nancy 2"
+                },
+                {
+                    "_id": "03",
+                    "title": "Nancy 3"
+                }
+            ]   
+        }
+    ]
+  },
+  {
+    "_id": "07",
+    "title": "Animation",
+    "subFilter": []
+  },
+  {
+    "_id": "08",
+    "title": "Gif ",
+    "subFilter": [
+        {
+            "_id": "01",
+            "title": "Gif data",
+            "childSubFilter": [] 
+        }
+    ]
+  }
+ 
+]

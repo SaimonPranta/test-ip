@@ -1,0 +1,23 @@
+.skeleton-grid-for-homesearch-section {
+    margin: 0 5px;
+    .skeleton-grid-for-homesearch {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 10px;
+    }
+}
+
+.skeleton-grid-for-homesearch-section {
+    margin: 0 5px;
+    .people-skeleton-section{
+        grid-gap: 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 5px;
+    }
+}
+
+.group-sections-search{
+    margin-top: 10px;
+}

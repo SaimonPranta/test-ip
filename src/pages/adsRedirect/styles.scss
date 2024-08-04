@@ -1,0 +1,99 @@
+.ads-redirect-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  padding: 20px;
+  .dialog-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    p {
+      width: 100%;
+      max-width: 700px;
+      font-size: 30px;
+      font-weight: 500;
+      margin: auto;
+      background-color: #0048ba;
+      border-radius: 10px;
+      text-transform: capitalize;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  .ads-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    .main-container {
+      position: relative;
+      height: auto;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #e4e4e4;
+      width: calc(1920px / 7);
+      cursor: pointer;
+      .sponsored {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 20px;
+        width: 75px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        p {
+          text-align: center;
+          margin-top: -3px;
+        }
+      }
+      .head {
+        display: flex;
+        justify-content: center;
+        // background-color: #ede2e2;
+        border-bottom: 1px solid #e4e4e4;
+        img {
+          // height: calc(1080px / 6.6);
+          height: calc(1080px / 7);
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+      .footer {
+        background-color: #ffffff;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          color: #0048ba;
+          font-size: 16px;
+          padding-right: 5px;
+        }
+        button {
+          padding: 2px 0px;
+          width: 115px;
+          background-color: #0048ba;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 700;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          cursor: pointer;
+          span {
+            margin-right: 4px;
+            font-size: 18px;
+          }
+          &.disable {
+            opacity: 0.5;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+}

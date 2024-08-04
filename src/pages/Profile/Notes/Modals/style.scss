@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+.MuiDialog-paperFullWidth {
+  max-height: 100vh;
+}
+
+.MuiList-padding {
+  padding-top: 0px !important;
+}
+
+.noteSection {
+  background: rgb(199, 210, 245);
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  border-radius: 5px;
+  .noteHeader {
+    display: flex;
+    justify-content: center;
+  }
+  ui {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    align-self: center;
+    display: flex;
+    list-style: none;
+    // border: 0.3px solid rgb(233, 233, 233);
+    margin: 2px;
+    border-radius: 2px;
+    height: 95%;
+    padding: 0px 30px;
+    align-items: center;
+    color: black;
+    background: #ffffff;
+  }
+  .hover {
+    background: #e0e0e0;
+    font-weight: 700;
+  }
+  .position {
+    padding: 0px;
+    height: 95%;
+    align-items: center;
+  }
+  .position p {
+    font-size: 19px;
+    background: #ffffff;
+    margin: 2px;
+    // padding: 10px;
+  }
+  .position p:hover {
+    background: #f1f1f1;
+  }
+  li:hover {
+    display: flex;
+    list-style: none;
+    height: 95%;
+    // background: #f3f3f3;
+  }
+}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  background: white;
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: 'system-ui';
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+  border: none;
+}
+.MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #42424200;
+  pointer-events: none;
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '\00a0';
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(255, 255, 255, 0%);
+  pointer-events: none;
+}
+.textArea {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  .textItem {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+  }
+}
+.hover {
+  background: #e0e0e0;
+  font-weight: 700;
+}
+.HyperInput {
+  height: 35px;
+  margin: 4px 4px 6px -1px;
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  padding: 5px;
+}
+.HyperInput::placeholder {
+  color: #c7c7c7;
+  padding: 5px;
+}
+.optionP:hover {
+  background: #e4e4e4;
+}
+.buttonCenter {
+  display: flex;
+  margin-left: 47%;
+  height: 25px;
+}
+
+.buttonSection {
+  margin-top: 10px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+}

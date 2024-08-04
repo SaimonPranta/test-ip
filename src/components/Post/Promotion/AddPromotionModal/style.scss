@@ -1,0 +1,254 @@
+$boder-color: 1px dotted #fa0e0e;
+
+.adds-modal-sections {
+    margin: 10px;
+    h1{
+        color: red;
+        background-color: yellow;
+    }
+}
+
+.header-title {
+    margin: 10px 0 0 10px;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 1rem 2rem;
+}
+
+.modal-content {
+    .add-modal-main-section {
+        .title-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+
+            .title-input-field {
+                border: $boder-color;
+            }
+
+            input {
+                width: 300px;
+            }
+        }
+
+        .ads-url-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+
+            .url-input-field {
+                border: $boder-color;
+            }
+
+            input {
+                width: 300px;
+            }
+        }
+
+        .description-sections {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            label {
+                width: 120px;
+            }
+
+            .description-input-field {
+                border: $boder-color;
+            }
+
+            textarea {
+                width: 300px;
+                height: 90px;
+            }
+        }
+
+        .category-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            .catgory-type-input {
+                border: $boder-color;
+            }
+            select {
+                width: 300px;
+                height: 30px;
+                option:first-child {
+                    display: none;
+                }
+                option {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .country-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+
+            .country-input-fields {
+                border: $boder-color;
+            }
+
+            select {
+                width: 300px;
+                height: 30px;
+                text-transform: capitalize;
+                option:first-child {
+                    display: none;
+                }
+                option {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .state-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            select {
+                width: 300px;
+                height: 30px;
+                text-transform: capitalize;
+                option:first-child {
+                    display: none;
+                }
+                option {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .city-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            select {
+                width: 300px;
+                height: 30px;
+                text-transform: capitalize;
+
+                option:first-child {
+                    display: none;
+                }
+                option {
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .goals-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            input {
+                width: 300px;
+            }
+            .goals-input-field {
+                border: $boder-color;
+            }
+        }
+
+        .gender-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            select {
+                width: 300px;
+                height: 30px;
+            }
+        }
+        .age-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            select {
+                width: 300px;
+                height: 30px;
+            }
+        }
+
+        .price-per-goals-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            input {
+                width: 300px;
+            }
+        }
+
+        .time-per-goals-sections {
+            margin-top: 10px;
+            label {
+                width: 120px;
+            }
+            input {
+                width: 300px;
+            }
+        }
+
+        .budget-per-goals-sections {
+            margin-top: 10px;
+            position: relative;
+            label {
+                width: 120px;
+            }
+            input {
+                width: 300px;
+                padding-left: 12px;
+            }
+
+            .usd-symbol {
+                position: absolute;
+                top: 0;
+                right: 24px;
+                border-left: 1px solid gray;
+                background-color: gray;
+                padding: 5px 10px;
+                height: 27px;
+                color: white;
+            }
+
+            .dolar-symbol {
+                position: absolute;
+                top: 0;
+                left: 125px;
+                padding: 3px 0px;
+            }
+        }
+
+        .privacy-sections {
+            margin-top: 10px;
+            display: flex;
+            // align-items: baseline;
+            input {
+                cursor: pointer;
+                margin-top: -15px;
+            }
+            label {
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .footer-section {
+        .submit-btn {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 5px;
+}
+
+
+@media screen and (max-width: 1600px) {
+    .people {
+        display: grid !important;
+        grid-template-columns: 1fr;     
+    }
+}

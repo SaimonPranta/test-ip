@@ -1,0 +1,262 @@
+[
+    {   
+        "id": 1,
+        "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/1f410c23-045a-4082-8aa4-4a8e37f56a8b._CR0,0,500,500_SX48_.jpg",
+        "username": "Big D",
+        "comment": "At the rear of the machine, the height is 70 inches. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form accompanied by English versions from the 1914 translation by H. Rackham",
+        "like": [
+            { "id": 1, "name": "Mr A", "username": "mr_a_11" },
+            { "id": 2, "name": "Mr B", "username": "mr_b_11" },
+            { "id": 3, "name": "Mr C", "username": "mr_c_11" }
+        ],
+        "unlike": [
+            { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+            { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+            { "id": 3, "name": "Mr F", "username": "mr_f_11"  }
+        ],
+        "date": "January 18, 2017",
+        "reply_comment": [
+            {
+                "id": 1,
+                "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+                "username": "Abhi D",
+                "comment": "Width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form accompanied by English versions from the 1914 translation by H. Rackham",
+                "like": [
+                    { "id": 1, "name": "Mr A", "username": "mr_a_11" },
+                    { "id": 2, "name": "Mr B", "username": "mr_b_11" },
+                    { "id": 3, "name": "Mr C", "username": "mr_c_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11"  },
+                    { "id": 4, "name": "Mr GG", "username": "mr_gg_11"  }
+                ],
+                "date": "August 6, 2017"
+            },
+            {
+                "id": 2,
+                "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/a906b2ab-c448-456b-8d56-ee4b33cbe8eb._CR0,0,400,400_SX48_.jpg",
+                "username": "Simply Belle",
+                "comment": "Tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11" },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11" },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11" },
+                    { "id": 4, "name": "Mr G", "username": "mr_g_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  }
+                ],
+                "date": "August 6, 2018"
+            },
+            {
+                "id": 3,
+                "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/1f410c23-045a-4082-8aa4-4a8e37f56a8b._CR0,0,500,500_SX48_.jpg",
+                "username": "Big D",
+                "comment": "Only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr H", "username": "mr_h_11" },
+                    { "id": 2, "name": "Mr J", "username": "mr_j_11" },
+                    { "id": 3, "name": "Mr K", "username": "mr_k_11" },
+                    { "id": 5, "name": "Mr L", "username": "mr_l_11" },
+                    { "id": 5, "name": "Mr M", "username": "mr_m_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  }
+                ],
+                "date": "August 6, 2018"
+            }
+        ]
+    },
+    {   
+        "id": 2,
+        "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/a906b2ab-c448-456b-8d56-ee4b33cbe8eb._CR0,0,400,400_SX48_.jpg",
+        "username": "Simply Belle",
+        "comment": "It is included. They ship in multiple boxes.  Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of de Finibus Bonorum et Malorum (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, Lorem ipsum dolor sit amet.., comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form accompanied by English versions from the 1914 translation by H. Rackham",
+        "like": [],
+        "unlike": [
+            { "id": 1, "name": "Mr F", "username": "mr_f_11"  }
+        ],
+        "date": "August 10, 2018",
+        "reply_comment": [
+            {
+                "id": 1,
+                "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+                "username": "Abhi D",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr N", "username": "mr_n_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11"  },
+                    { "id": 4, "name": "Mr FF", "username": "mr_ff_11"  },
+                    { "id": 5, "name": "Mr FPP", "username": "mr_fpp_11"  },
+                    { "id": 6, "name": "Mr FPG", "username": "mr_fpg_11"  }
+                ],
+                "date": "August 6, 2016"
+            }
+        ]
+    },
+    {   
+        "id": 3,
+        "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+        "username": "Abhi D",
+        "comment": "you cannot add more weights to it. it comes with 200 lbs of weights which produce 270 lbs of resistance for the bench press.",
+        "like": [
+            { "id": 1, "name": "Mr G", "username": "mr_g_11"  },
+            { "id": 2, "name": "Mr H", "username": "mr_h_11"  },
+            { "id": 3, "name": "Mr I", "username": "mr_i_11"  },
+            { "id": 4, "name": "Mr J", "username": "mr_j_11"  },
+            { "id": 5, "name": "Mr K", "username": "mr_k_11"  },
+            { "id": 6, "name": "Mr L", "username": "mr_l_11"  }
+        ],
+        "unlike": [],
+        "date": "April 13, 2016",
+        "reply_comment": [
+            {
+                "id": 1,
+                "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/a906b2ab-c448-456b-8d56-ee4b33cbe8eb._CR0,0,400,400_SX48_.jpg",
+                "username": "Simply Belle",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr O", "username": "mr_o_11" },
+                    { "id": 2, "name": "Mr P", "username": "mr_p_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  }
+                ],
+                "date": "August 6, 2016"
+            },
+            {
+                "id": 2,
+                "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+                "username": "Abhi D",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr Q", "username": "mr_q_11" },
+                    { "id": 2, "name": "Mr R", "username": "mr_r_11" },
+                    { "id": 3, "name": "Mr W", "username": "mr_w_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11"  }
+                ],
+                "date": "August 6, 2016"
+            }
+        ]
+    },
+    {   
+        "id": 4,
+        "user_photo": "https://images-na.ssl-images-amazon.com/images/I/71ghm0DvLXL._AC_UL160_SR160,160_.jpg",
+        "username": "D Silva",
+        "comment": "you cannot add more weights to it. it comes with 200 lbs of weights which produce 270 s of resistance for the bench press.",
+        "like": [
+            { "id": 1, "name": "Mr M", "username": "mr_m_11"  },
+            { "id": 2, "name": "Mr N", "username": "mr_n_11"  },
+            { "id": 3, "name": "Mr O", "username": "mr_o_11"  }
+        ],
+        "unlike": [
+            { "id": 1, "name": "Mr Q", "username": "mr_q_11"  },
+            { "id": 2, "name": "Mr R", "username": "mr_r_11"  },
+            { "id": 3, "name": "Mr W", "username": "mr_w_11"  }
+        ],
+        "date": "April 13, 2016",
+        "reply_comment": [
+            {
+                "id": 1,
+                "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+                "username": "Abhi D",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr X", "username": "mr_x_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11"  },
+                    { "id": 4, "name": "Mr G", "username": "mr_g_11"  }
+                ],
+                "date": "August 6, 2016"
+            },
+            {
+                "id": 2,
+                "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/a906b2ab-c448-456b-8d56-ee4b33cbe8eb._CR0,0,400,400_SX48_.jpg",
+                "username": "Simply Belle",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr Y", "username": "mr_y_11" },
+                    { "id": 2, "name": "Mr Z", "username": "mr_z_11" },
+                    { "id": 3, "name": "Mr CSD", "username": "mr_csd_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  }
+                ],
+                "date": "August 6, 2016"
+            }
+        ]
+    },
+    {   
+        "id": 5,
+        "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png",
+        "username": "Alexander",
+        "comment": "you cannot add more weights to it. it comes with 300 lbs of weights which produce 270 lbs of resistance for the bench press.",
+        "like": [
+            { "id": 1, "name": "Mr A", "username": "mr_a_11"  },
+            { "id": 2, "name": "Mr B", "username": "mr_b_11"  },
+            { "id": 3, "name": "Mr C", "username": "mr_c_11"  },
+            { "id": 4, "name": "Mr D", "username": "mr_d_11"  },
+            { "id": 5, "name": "Mr E", "username": "mr_e_11"  },
+            { "id": 6, "name": "Mr F", "username": "mr_f_11"  },
+            { "id": 7, "name": "Mr G", "username": "mr_g_11"  },
+            { "id": 8, "name": "Mr H", "username": "mr_h_11"  }
+        ],
+        "unlike": [
+            { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+            { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+            { "id": 3, "name": "Mr F", "username": "mr_f_11"  },
+            { "id": 4, "name": "Mr G", "username": "mr_g_11"  },
+            { "id": 5, "name": "Mr H", "username": "mr_h_11"  }
+        ],
+        "date": "April 13, 2016",
+        "reply_comment": [
+            {
+                "id": 1,
+                "user_photo": "https://static-01.daraz.com.bd/p/f00bbb93f6f4496492d080923ea194ab.jpg_188x188.jpg_.webp",
+                "username": "Abhi D",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr AAP", "username": "mr_aap_11" },
+                    { "id": 2, "name": "Mr BP", "username": "mr_bp_11" },
+                    { "id": 3, "name": "Mr CCG", "username": "mr_ccg_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  },
+                    { "id": 3, "name": "Mr F", "username": "mr_f_11"  }
+                ],
+                "date": "August 6, 2016"
+            },
+            {
+                "id": 2,
+                "user_photo": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/a906b2ab-c448-456b-8d56-ee4b33cbe8eb._CR0,0,400,400_SX48_.jpg",
+                "username": "Simply Belle",
+                "comment": "Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful. Can someone tell me the width of the tower casing only that houses the weight stack? i'm preparing the space before it arrives, information helpful.",
+                "like": [
+                    { "id": 1, "name": "Mr AKJ", "username": "mr_aak_11" },
+                    { "id": 2, "name": "Mr BALL", "username": "mr_ball_11" },
+                    { "id": 3, "name": "Mr CAT", "username": "mr_cat_11" }
+                ],
+                "unlike": [
+                    { "id": 1, "name": "Mr D", "username": "mr_d_11"  },
+                    { "id": 2, "name": "Mr E", "username": "mr_e_11"  }
+                ],
+                "date": "August 6, 2016"
+            }
+        ]
+    }
+]

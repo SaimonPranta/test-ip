@@ -1,0 +1,248 @@
+.side-navigation-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding-right: 10px;
+  padding: 20px 10px 20px 15px;
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .big-gap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .small-gap {
+    margin: 8px 0px;
+  }
+
+  .top-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    a {
+      height: 120px;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid var(--common-border-color);
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--default-color);
+
+        p {
+          color: #ffffff;
+        }
+      }
+
+      p {
+        font-weight: 800;
+        font-size: 18px;
+        color: #000000;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .top-categories {
+    .top {
+      .reports-balance {
+        border: 1px solid var(--common-border-color);
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        position: relative;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px 0;
+          width: 100%;
+          color: #000;
+          position: relative;
+          border-right: 1px solid var(--common-border-color);
+
+          &:last-child {
+            border: none;
+          }
+
+          &.messenger {
+            min-width: 90px !important;
+          }
+
+          svg {
+            height: 27px;
+            width: 27px;
+            font-size: 18px;
+          }
+
+          .count-section {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            height: 15px;
+            padding: 0px 2px;
+            width: auto;
+            background-color: #e4e4e4;
+            font-weight: 200;
+            font-size: 10px;
+            color: #000;
+          }
+
+          &.active {
+            background-color: #0048ba !important;
+            color: #ffffff !important;
+          }
+
+          &:hover {
+            background-color: #0048ba;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  .search-section {
+    form {
+      margin: 0px;
+      padding: 0px;
+      height: 40px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 2px solid var(--common-border-color);
+
+      &.focused {
+        border: 2px solid var(--default-color);
+
+        button {
+          border-left: 2px solid var(--default-color);
+        }
+      }
+
+      input,
+      button {
+        margin: 0px;
+        padding: 0px;
+        outline: none;
+        border: none;
+        background-color: transparent;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px 8px;
+      }
+
+      button {
+        background-color: transparent;
+        border-left: 2px solid var(--common-border-color);
+        width: 47px;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &:active {
+          transform: scale(0.9);
+        }
+
+        &:hover {
+          background-color: var(--default-color);
+          border-left: 2px solid var(--default-color);
+
+          svg {
+            color: #ffffff;
+          }
+        }
+
+        svg {
+          color: #000;
+          height: 20px;
+          width: 20px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .navigator-section {
+    flex-grow: 1;
+
+    ul,
+    li {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      li {
+        border: none;
+
+        a {
+          display: inline-block;
+          margin: 0;
+          padding: 0;
+          text-decoration: none;
+          border: 1px solid var(--common-border-color);
+          padding: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          color: #000;
+          transition: 0.3s;
+
+          &.active {
+            border: 1px solid #0048ba;
+            background-color: #0048ba;
+            color: #ffffff;
+            border-radius: 4px;
+          }
+
+          p {
+            text-align: center;
+          }
+
+          &:hover {
+            border: 1px solid #0048ba;
+            background-color: #0048ba;
+            color: #ffffff;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .text-style {
+    font-weight: 700;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+// custome button style
+.customebutton {
+  background-color: #ffffff;
+  font-family: 'system-ui';
+  font-weight: 900;
+  color: #1d1d1d;
+  padding: 5.6px 50px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  align-self: center;
+  border: 1px solid #e4e4e4;
+  transition: 0.1s ease-in-out;
+}
+.customebutton:hover {
+  background-color: #3f51b5;
+  color: white;
+  // background-color: #3750db;
+}
+.customebutton:active {
+  background-color: #3750db;
+  padding: 5px 40px;
+  transform: scale(0.95);
+  color: #ffffff;
+}
+.customebutton:active:hover {
+  color: #ffffff;
+}
+// custome button style
+.check_terms {
+  width: 20px;
+}
+// customebuttonInActive button style
+.customebuttonInActive {
+  font-family: 'system-ui';
+  font-weight: 900;
+  background-color: #fafafa;
+  color: rgb(34, 34, 34) !important;
+  padding: 5px 60px;
+  font-size: 15px;
+  border: none;
+  border-radius: 2px;
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+.customebuttonInActive:hover {
+  background-color: #d8d8d8;
+}
+.customebuttonInActive:active {
+  background-color: #d8d8d8;
+  padding: 5px 60px;
+}
+// customebuttonInActive button style

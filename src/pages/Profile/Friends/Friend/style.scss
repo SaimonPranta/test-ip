@@ -1,0 +1,48 @@
+.frnd-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e4e4e4;
+  padding: 5px;
+  img {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+    margin-right: 5px;
+  }
+  a {
+    font-size: 18px;
+    color: darkgreen;
+  }
+  .info {
+    width: max-content;
+    p {
+      margin: 0;
+      font-size: 12px;
+    }
+  }
+  .btn {
+    border: 1px solid #e4e4e4;
+  }
+}
+
+.people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.friends-skeleton-section {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 1250px) {
+  .people {
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+.share {
+  padding: 10px 0px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 0px 10px;
+  .sharDiv {
+    padding: 2px 5px;
+    margin: 4px 0px;
+    border-radius: 4px;
+  }
+  .sharDiv:hover {
+    background-color: #f5f5f5;
+  }
+  .sharDiv b {
+    // border: 1px solid red;
+    color: rgb(24, 24, 24);
+    padding: 8px 0px;
+  }
+}
+.sharDiv {
+  display: flex;
+  align-items: center;
+}

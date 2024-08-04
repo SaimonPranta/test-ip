@@ -1,0 +1,26 @@
+.noposts {
+  text-align: center;
+}
+
+
+.timeline-ads-compoments{
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+
+  .timeline-ads-compoments{
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+.suggestion-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+
+@media only screen and (max-width: 1350px) {
+    .suggestion-section{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,273 @@
+.storyAddDiv {
+    border-right: 1px solid #e4e4e4;
+    background-color: #e4e4e4;
+
+    .storyAddHeader {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+        .privacy-option{
+            width: 30px;
+            height: 30px;
+            border: 1px solid #80808000;
+            border-radius: 50%;
+            background-color: transparent;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+
+    }
+
+    .text-area{
+        padding: 5px 20px;
+    }
+
+    .font-size-section{
+        padding: 0px 20px 10px;
+        
+        .font-size-container{
+            background-color: white;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px 0px;           
+            .font-txt{
+                text-align: center;
+                font-size: 18px 
+            }
+        }
+    }
+    
+    .font-family-section{
+        padding: 0px 20px;
+        
+        .font-family--container{
+            background-color: white;
+            padding:  0px 10px  0px 10px;
+            border-radius: 10px ;
+            .font-family-select{
+                width: 100%;
+                border: none;
+                padding: 10px;
+                height: 10%;
+
+                option{
+                    width: 50%;
+                }
+            }
+
+        }
+    }
+
+    .customebackground-section {
+        width: 92%;
+        font-size: 25px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #e4e4e4;
+        // font-family: 'system-ui';
+        margin: 10px auto; 
+        padding: 10px 20px;
+        .bg-txt{
+            text-align: center;
+            font-size: 18px
+        }
+    }
+    
+    .AddImage {
+        background: #ffffff;
+        color: black;
+        border: 1px solid #424242;
+        margin: 4px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        width: 40px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .text-color-section{
+        width: 92%;
+        font-size: 25px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #e4e4e4;
+        // font-family: 'system-ui';
+        margin: 10px auto; 
+        padding: 10px 20px;
+        
+        .text-color-container{
+            display: grid;
+            grid-template-columns: 1fr 50px;
+
+            .default-text-color{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+                gap: 10px;
+                .single-text-color-box{
+                    cursor: pointer;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .txt-color-svg{
+                        font-size: 26px;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        text-align: center;
+                        justify-content: center;
+                    }
+
+                }
+
+
+
+            }
+
+            .text-color-picker{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 50px;
+            }
+        }
+
+    }
+
+
+    .story-duration-section{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        .Selection {
+            height: 48px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: white;
+            font-size: 16px;
+        }
+        #duration {
+            flex-wrap: nowrap;
+            width: 100%;
+            display: flex;
+            // text-align-last: justify;
+            border: none;
+        }
+    }
+
+
+    .stroy-preview-section{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+        overflow: hidden;
+        margin-top: 5px;
+        width: 100%;
+        .story-preview-container{
+            overflow-x: scroll;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+
+    .customebackground{
+        width: 100%;
+        font-size: 25px;
+        // height: 250px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #e4e4e4;
+        font-family: 'system-ui';
+        .submitButton {
+            background-color: #b34747;
+            &:hover{
+                background-color: #063e99 !important;
+            }
+        }
+    }
+
+
+
+ 
+    .header {
+      border-right: 2px solid #b6b6b6;
+    }
+    .dflexBetween {
+      display: flex;
+      justify-content: space-between;
+    }
+    .customeInput {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+      height: 100px;
+      padding: 10px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid #e4e4e4;
+      font-family: 'system-ui';
+    }
+  
+
+    .submitButton {
+      background-color: #b34747;
+    }
+    .submitButton:hover {
+      background-color: #063e99 !important;
+    }
+    textarea::placeholder {
+      font-size: 16px;
+      font-family: 'system-ui';
+    }
+}
+
+
+.storyPreviewDiv  .ActionButton {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.closeBtn {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.closeBtn:hover {
+    transform: scale(0.7);
+}
+
+.CrossStory {
+    color: #0a0a0a;
+    font-size: 20px;
+    // position: absolute;
+    cursor: pointer;
+}
+.CrossStory:hover {
+    transform: scale(0.9);
+}
+
+
+
+@media screen and (max-width: 1675px){
+    .storyAddDiv {
+
+        .text-color-section{
+
+            .text-color-container{
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

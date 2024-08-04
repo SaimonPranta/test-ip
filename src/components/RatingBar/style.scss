@@ -1,0 +1,9 @@
+.rating-wrapper {
+  .rating {
+    font-size: 24px;
+    color: #e4e4e4;
+    &.active {
+      color: #ff9900;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.search-video-player-tools-sections {
+    background-color: #424242;
+    color: white;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+    .background-for-default-img{
+        height: 100%;
+        width: 100%;
+        background: #000000;
+    }
+    img{
+        width: 100%;
+    }
+}
+.search-video{
+    margin: 5px 250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+  grid-gap: 10px;
+}

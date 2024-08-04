@@ -1,0 +1,21 @@
+.poll-modal-popup {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.poll-modal-popup img {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 1440px) {
+  .poll-modal-popup {
+    cursor: pointer;
+    margin-left: 2px;
+  }
+
+  .poll-modal-popup img {
+    height: 25px;
+    width: 25px;
+  }
+}

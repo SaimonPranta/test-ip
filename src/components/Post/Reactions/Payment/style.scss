@@ -1,0 +1,35 @@
+.MuiFilledInput-input {
+  padding: 15px 12px 10px;
+}
+.MuiFilledInput-input {
+  padding: 47px 12px 10px !important;
+}
+.SubmitDiv {
+  .payonerDiv {
+    .payonerCopy {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      border: 1px solid #e4e4e4;
+    }
+    // input[type='text'] {
+    //   margin-top: 10px;
+    //   width: 100%;
+    //   border: #e4e4e4;
+    //   padding: 5px;
+    //   color: #9e9a9a;
+    // }
+  }
+  .AdditionalInput {
+    display: flex;
+  }
+  input[type='text'] {
+    width: 100%;
+    border: #e4e4e4;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  input:active {
+    border: 1px solid rgb(88, 154, 241) !important;
+  }
+}

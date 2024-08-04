@@ -1,0 +1,11 @@
+.request-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 1250px) {
+    .request-section{
+        grid-template-columns: 1fr;
+    }
+}

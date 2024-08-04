@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "cateName": "Medical"
+    },
+    {
+        "id": 2,
+        "cateName": "Memorial"
+    },
+    {
+        "id": 3,
+        "cateName": "Emergency"
+    },
+    {
+        "id": 4,
+        "cateName": "Nonprofit"
+    },
+    {
+        "id": 5,
+        "cateName": "Education"
+    },
+    {
+        "id": 6,
+        "cateName": "Animals"
+    },
+    {
+        "id": 7,
+        "cateName": "Environment"
+    },
+    {
+        "id": 8,
+        "cateName": "Business"
+    },
+    {
+        "id": 9,
+        "cateName": "Community"
+    },
+    {
+        "id": 10,
+        "cateName": "Competition"
+    },
+    {
+        "id": 11,
+        "cateName": "Creative"
+    },
+    {
+        "id": 12,
+        "cateName": "Event"
+    },
+    {
+        "id": 13,
+        "cateName": "Family"
+    },
+    {
+        "id": 14,
+        "cateName": "Sports"
+    },
+    {
+        "id": 15,
+        "cateName": "Travel"
+    },
+    {
+        "id": 16,
+        "cateName": "Volunteer"
+    },
+    {
+        "id": 17,
+        "cateName": "Wishes"
+    }
+]

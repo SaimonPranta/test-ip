@@ -1,0 +1,5 @@
+export const DELETE_STORY = "DELETE_STORY";
+export const GET_ALL_STORY = "GET_ALL_STORY";
+export const UPDATE_STORY = "UPDATE_STORY";
+
+export const DELETE_STORY_SOCKET = "DELETE_STORY_SOCKET";

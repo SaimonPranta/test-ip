@@ -1,0 +1,12 @@
+.home-search-notes {
+  .profile-photo-tabs-img {
+    height: 150px;
+    width: 100%;
+  }
+}
+.search-notes {
+  margin: 5px 250px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-gap: 10px;
+}

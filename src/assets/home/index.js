@@ -1,0 +1,10 @@
+export { default as ManagerIcon } from './Manager.png';
+export { default as SupportIcon } from './Support.png';
+export { default as CameraIcon } from './Camera.png';
+export { default as VoiceIcon } from './Voice.png';
+export { default as CallIcon } from './Call.png';
+export { default as ChatIcon } from './Chat.png';
+// export { default as LogoIcon } from './Logo.png';
+export { default as LogoIcon } from './HOME-Logo.png';
+export { default as MailIcon } from './Mail.png';
+export { default as UserIcon } from './User.png';

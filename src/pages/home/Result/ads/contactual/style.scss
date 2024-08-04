@@ -1,0 +1,17 @@
+.contactual-ads-sections {
+    .ads-title {
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+    .ads-description {
+        font-size: 14px;
+        color: #000;
+        margin-top: -3px;
+        -webkit-box-orient: vertical;
+        display: block;
+        display: -webkit-box;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+    }
+}

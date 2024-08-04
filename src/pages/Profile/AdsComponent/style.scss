@@ -1,0 +1,42 @@
+.Ads-parent {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+    .profile-ads-image {
+        height: 150px;
+        width: 240px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+
+    
+    .profile-ads-video {
+        height: 150px;
+        width: 240px;
+        // bottom: 4px;
+        object-fit: cover;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .Ads-parent {
+        .profile-ads-image {
+            height: 100px;
+            width: 180px;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .profile-ads-video {
+            height: 100px;
+            width: 180px;
+            // bottom: 4px;
+            object-fit: cover;
+            position: relative;
+        }
+    }
+}

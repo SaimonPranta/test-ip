@@ -17,14 +17,12 @@ export const getUser =  () => {
     const token = localStorage.getItem("u_t");
    useEffect(() => {
     if (u_exp && u_exp > Date.now() && user && token) {
-        console.log("Hello form test =============================>>>>>>")
         axios
            .get(`${BACKEND_URL}/user/auth/auto`, {
                headers: userHeader(),
            })
            .then((res) => {
                setIsLoading(false);
-               console.log("================>>>>>", res)
                if (res.data) {
                    dispatch({ type: AUTO_LOGIN, payload: res.data });
                } else {

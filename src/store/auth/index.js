@@ -28,6 +28,9 @@ const initialState = {
     banned: false,
     description: "",
     mainBalance: 0,
+    campaignInfo: {},
+    verificationInfo: {},
+    blueBadgeInfo: {},
   },
 
   loggedIn: false,
@@ -108,7 +111,6 @@ console.log(`hello from "AUTO_LOGIN" `, {
         loggingIn: true,
       };
     case AUTO_LOGIN + FULFILLED:
-      console.log("Hello form here ========================<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
       return onLoginFulfilled(state, payload);
     case AUTO_LOGIN + REJECTED:
       const err = payload.response?.data?.type;

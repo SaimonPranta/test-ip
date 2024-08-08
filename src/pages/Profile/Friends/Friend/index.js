@@ -9,7 +9,6 @@ import "./style.scss";
 
 export default ({ username }) => {
   const { friends, working, setFriends } = getFriends(username);
-  // console.log("FIREND friend -------" ,friends);
 
   function editFriends(user) {
     const newFriends = friends.map((i) => {

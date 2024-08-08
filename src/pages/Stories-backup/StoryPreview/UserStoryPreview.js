@@ -3,10 +3,8 @@ import Draggable from "react-draggable";
 
 class UserStoryPreview extends React.Component {
   eventLogger = (e, data) => {
-    console.log("eventLogger: ", data);
   };
   handleDrag = (e, data) => {
-    console.log("handleDrag: ", data);
   };
   state = {
     width: 200,

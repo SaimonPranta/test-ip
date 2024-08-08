@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from "react";
 import { getUrl } from "./../../../../shared/functions/index";
 
 const PreviewSlider = ({ data, type }) => {
-  console.log(data);
   const timeoutRef = React.useRef(null);
   const [currentIndex, setCurrentIndex] = useState(1);
   const sliderRef = useRef();
@@ -36,7 +35,6 @@ const PreviewSlider = ({ data, type }) => {
 
   useEffect(() => {
     if (data) {
-      console.log(data?.length);
       setSliderItem([data[parseInt(data?.length - 1)], ...data, ...data]);
     }
   }, [data]);

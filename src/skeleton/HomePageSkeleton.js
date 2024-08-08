@@ -4,6 +4,7 @@ import "./HomeSkeleton.scss";
 const HomePageSkeleton = () => {
   const token = localStorage.getItem("u_t");
 
+  
   return (
     <div>
       {token ? (

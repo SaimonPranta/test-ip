@@ -102,7 +102,6 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                     setCountry(data?.allCountriesStateCity?.country)
 
                 }).catch((err) => {
-                    console.log("something went wrong!", err);
                 })
                 break;
 
@@ -123,7 +122,6 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                     setTimePerGoals(data?.CategoryPrice?.time_per_goals);
                     setVat(data?.CategoryPrice?.vat);
                 }).catch((err) => {
-                    console.log("something went wrong!", err);
                 })
 
                 // code block
@@ -147,7 +145,7 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                     setTimePerGoals(data?.CategoryPrice?.time_per_goals);
                     setVat(data?.CategoryPrice?.vat);
                 }).catch((err) => {
-                    console.log("something went wrong!", err);
+                    
                 })
 
                 setActiveCity(true);
@@ -155,8 +153,6 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                 break;
 
             case "city":
-                console.log("city is just selected", e.target.value);
-
                 body = {
                     type: "cityPrice",
                     country: queries?.country,
@@ -171,7 +167,7 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                     setTimePerGoals(data?.CategoryPrice?.time_per_goals);
                     setVat(data?.CategoryPrice?.vat);
                 }).catch((err) => {
-                    console.log("something went wrong!", err);
+                    
                 })
 
                 break;
@@ -796,12 +792,12 @@ const PromotionModal = ({ show, handleClose, postId, setPStatus, setPeditStatus,
                     handleClose();
 
                 }).catch((err) => {
-                    console.log("something went wrong!", err);
+                    
                 })
 
 
             }).catch((err) => {
-                console.log("something went wrong!", err);
+                
             })
 
         }

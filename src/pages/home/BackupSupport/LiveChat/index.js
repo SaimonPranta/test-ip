@@ -132,7 +132,6 @@ const Index = ({ setModals, modals }) => {
       await sendPhoneOtp()
     } catch (error) {
       setOtpSend(false)
-      console.log('firebase phone auth error=====>', error)
       removeRecaptchaContainer()
     }
   }
@@ -148,7 +147,6 @@ const Index = ({ setModals, modals }) => {
       .catch((error) => {
         setOtpSend(false)
         removeRecaptchaContainer()
-        console.log('firebase phone auth error=====>', error)
       });
   }
 
@@ -163,7 +161,6 @@ const Index = ({ setModals, modals }) => {
           removeRecaptchaContainer()
         })
         .catch((error) => {
-          console.log('otp verify error', error)
           setOtpError(true)
           setOtpProcess(false)
           removeRecaptchaContainer()
@@ -199,7 +196,6 @@ const Index = ({ setModals, modals }) => {
     const phoneNumber = getPhoneNumber() || input?.phoneNumber;
 
     if (phoneNumber && !isFirstRender) {
-      console.log("phoneNumber ===>>", phoneNumber);
       socket.emit("get-message", { phoneNumber });
     }
 
@@ -208,29 +204,10 @@ const Index = ({ setModals, modals }) => {
     };
   }, [input?.phoneNumber]);
 
-  // useEffect(() => {
-  //   console.log("call useEffect");
-
-  //   const phoneNumber = getPhoneNumber() || input?.phoneNumber;
-  //   if (phoneNumber) {
-  //     console.log("phoneNumber ===>>", phoneNumber);
-  //     socket.emit("get-message", { phoneNumber });
-  //   }
-
-  //   // socket.emit("get-message", { phoneNumber })
-
-  //   return () => {
-  //     socket.emit("remove-user");
-  //   };
-  // }, [listedAsActive]);
+   
 
   useEffect(() => {
-    console.log("Call use Effect main =======>>>>");
-
     socket.on("get-message", (msg) => {
-      console.log("Call use Effect =======>>>>");
-
-      // const debouncedCallback = handleDebounce();
       // debouncedCallback();
       if (msg?._id) {
         setIsFirstRender(true)
@@ -250,8 +227,6 @@ const Index = ({ setModals, modals }) => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
-  console.log("messages", message);
-
   const submitInitialMessage = (e) => {
     const chatSubject = e.target.value;
     input["chatSubject"] = chatSubject;
@@ -263,7 +238,6 @@ const Index = ({ setModals, modals }) => {
     ) {
       return;
     }
-    console.log("input", input);
     const phoneNumber = `${dialCode}${input?.phoneNumber}`;
     socket.emit("send-message", {
       phoneNumber: phoneNumber,
@@ -312,7 +286,7 @@ const Index = ({ setModals, modals }) => {
   };
 
   const getChatMedia = (pathName, chatId) => {
-    if (!pathName || !chatId) return console.log('pathName is not found')
+    if (!pathName || !chatId) return  
     const back =
       process.env.NODE_ENV === "development"
         ? "http://127.0.0.1:2300"

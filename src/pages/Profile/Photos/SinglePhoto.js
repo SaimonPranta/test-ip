@@ -29,7 +29,6 @@ function SinglePhoto({ history, isMe, username, photo }) {
 
   const something = (event) => {
     if (event.keyCode === 13) {
-      // console.log("enter");
       onSave();
       setEditIcon(true);
     }

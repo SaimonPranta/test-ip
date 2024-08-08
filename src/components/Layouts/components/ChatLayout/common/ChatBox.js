@@ -6,9 +6,6 @@ import {convertToDate} from "../../../../../shared/functions/timeConverter"
 const ChatBox = ({message, oppositeUser}) => {
     const user = useSelector(state => state?.auth?.user)
 
-    console.log("inside chat box com", message)
-
-    console.log(user.id, oppositeUser)
     return (
 
         <>

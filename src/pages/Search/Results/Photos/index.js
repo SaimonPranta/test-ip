@@ -7,8 +7,6 @@ import Photo from './Photo';
 
 export default ({ photos = [], search }) => {
 
-  {console.log("from photos class ---->", photos) }
-  
   if (photos.length > 0) {
     return (
       <Gallery>

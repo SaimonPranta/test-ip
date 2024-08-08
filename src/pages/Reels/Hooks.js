@@ -32,7 +32,7 @@ export function getReels(render, setRender) {
         //     return;
         //   }
 
-        console.log(err);
+        
       });
     return () => cancel();
   }, [render]);
@@ -68,7 +68,7 @@ export function getReelReactions(id, completeReelReaction, index, type) {
         //     return;
         //   }
 
-        console.log(err);
+        
       });
     return () => cancel();
   }, [completeReelReaction, id, index]);
@@ -104,7 +104,7 @@ export function getReelComments(id, render) {
         //     return;
         //   }
 
-        console.log(err);
+        
       });
     return () => cancel();
   }, [id, render]);
@@ -139,7 +139,7 @@ export function getCommentReactions(reelId, commentId, index) {
         //     setWorking(false);
         //     return;
         //   }
-        console.log(err);
+        
       });
     return () => cancel();
   }, [reelId, index, commentId]);

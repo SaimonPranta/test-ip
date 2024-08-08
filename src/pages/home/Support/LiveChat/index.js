@@ -86,7 +86,6 @@ const Index = ({ setModals, modals }) => {
       await sendPhoneOtp();
     } catch (error) {
       setOtpSend(false);
-      console.log("firebase phone auth error=====>", error);
       removeRecaptchaContainer();
     }
   };
@@ -102,7 +101,6 @@ const Index = ({ setModals, modals }) => {
       .catch((error) => {
         setOtpSend(false);
         removeRecaptchaContainer();
-        console.log("firebase phone auth error=====>", error);
       });
   };
 
@@ -118,7 +116,6 @@ const Index = ({ setModals, modals }) => {
           removeRecaptchaContainer();
         })
         .catch((error) => {
-          console.log("otp verify error", error);
           setOtpError(true);
           setOtpProcess(false);
           removeRecaptchaContainer();
@@ -190,7 +187,6 @@ const Index = ({ setModals, modals }) => {
   };
 
   const getMessage = (data) => {
-    console.log(data?.chatId, chatInfo?._id);
     if (data?.chatId.toString() === chatInfo?._id.toString()) {
       setAdminTyping(false);
       setChatInfo((state) => {
@@ -296,11 +292,7 @@ const Index = ({ setModals, modals }) => {
   };
 
   const getMoreMessages = () => {
-    console.log(
-      chatInfo.totalMessage,
-      chatInfo.messages.length,
-      "get more message"
-    );
+   
     if (chatInfo?.messages.length < chatInfo?.totalMessage) {
       axios
         .get(
@@ -355,7 +347,6 @@ const Index = ({ setModals, modals }) => {
   useEffect(() => {
     const handleScroll = (e) => {
       if (e.target.scrollTop === 0) {
-        console.log("scroll top 000000000000");
         getMoreMessages();
       }
     };

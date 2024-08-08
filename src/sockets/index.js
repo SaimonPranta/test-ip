@@ -118,7 +118,6 @@ if (!!token) {
   query.peerId = peer.id;
 }
 
-console.log("peer.id", peer.id, peer);
 
 const url =
   process.env.NODE_ENV === "development"
@@ -127,7 +126,6 @@ const url =
       "https://plmqazoknwsxijbedcuhvrfygt.micple.com";
 
 const socket = io.connect(url, { query });
-// console.log(url)
 // ? Intigators
 socket.on(set_intigator_counts, (payload) => {
   store.dispatch(setIndicators(payload));
@@ -135,19 +133,13 @@ socket.on(set_intigator_counts, (payload) => {
 
 // socket connection error or user not verified
 socket.on("connect_error", (err) => {
-  console.log(err instanceof Error); // true
-  console.log(err.message); // not authorized
-  console.log(err.data);
 
   //this error gonna handle when frontend error handle implemented
 });
 
 socket.on("global_socket_error", function (err) {
   // do something with err
-  console.log(
-    "this is error -------------------------------------------------------------------------------",
-    err
-  );
+ 
 });
 
 // socket.on('connect_failed', function() {
@@ -156,7 +148,6 @@ socket.on("global_socket_error", function (err) {
 // })
 
 socket.on("user_not_authenticated", (message) => {
-  console.log("i am valid not user messag4e", message);
   socket.off();
 });
 
@@ -178,8 +169,6 @@ socket.on(make_room_inactive, (roomId) => {
   store.dispatch(makeInactive(roomId));
 });
 socket.on(push_chat_messages, ({ roomId, messages }) => {
-  console.log(roomId, "roomid");
-  console.log(messages, "messages");
   const data = Array.isArray(messages) ? messages : [messages];
   store.dispatch(setMessages(roomId, data));
 });
@@ -316,7 +305,6 @@ socket.on(delete_comment, (data) => {
 
 // * Reply
 socket.on(get_replies, (data) => {
-  // console.log("data replies -->", data );
   store.dispatch(setReplies(data));
 });
 socket.on(reply, (data) => {
@@ -331,7 +319,6 @@ socket.on(delete_reply, (data) => {
 
 // Delete Story
 socket.on(delete_story, () => {
-  console.log("called Socket");
   store.dispatch(deleteStorySocket());
 });
 

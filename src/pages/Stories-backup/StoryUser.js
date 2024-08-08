@@ -29,7 +29,6 @@ const StoryUser = ({
 }) => {
   let history = useHistory();
   let { userId } = useParams();
-  console.log("userId single user section", userId);
 
   const [allStoryByUser, setAllStoryByUser] = useState();
   const [StoryDuration, setStoryDuration] = useState(20);
@@ -49,16 +48,12 @@ const StoryUser = ({
   const BeforeStoryHandler = (e) => {
     history.push(`/newsfeed`);
   };
-  console.log("userInfo", userInfo.avatar);
-
-  // console.log("Story user id", userId);
   useEffect(() => {
     axios
       .get(`${BACKEND_URL}/stories/userinfo/${userId}`, {
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("User  data", res.data);
         setUserInfo(res.data);
       })
       .catch((err) => console.error(err));
@@ -70,7 +65,6 @@ const StoryUser = ({
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("UniqueUser", res.data.UniqueUser);
         setAllStoryUser(res.data.UniqueUser);
       })
       .catch((err) => console.error(err));

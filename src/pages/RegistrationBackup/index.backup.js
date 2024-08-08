@@ -497,7 +497,7 @@ const Index = () => {
           }
         })
         .catch((error) => {
-          console.log(error)
+          
           setCondition((state) => {
             return {
               ...state,
@@ -540,7 +540,6 @@ const Index = () => {
         }
       })
       .catch((error) => {
-        console.log(error)
       });
   }
 

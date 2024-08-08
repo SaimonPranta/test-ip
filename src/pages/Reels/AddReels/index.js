@@ -29,7 +29,6 @@ const Index = () => {
   const [selectedReels, setSelectedReels] = useState(totalReels[0]);
 
   const handleSelectedReel = (item, index) => {
-    console.log(item);
     setSelectedReels(item);
     setActiveReel(index);
     setDescription("");
@@ -134,8 +133,6 @@ const Index = () => {
     });
 
     formData.append("data", JSON.stringify(data));
-
-    console.log(data);
     axios
       .post(`${BACKEND_URL}/profile/reel/create`, formData, {
         headers: userHeader(),
@@ -146,7 +143,6 @@ const Index = () => {
         }
       })
       .catch((error) => {
-        console.log(error);
       });
   };
 

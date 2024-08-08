@@ -73,7 +73,6 @@ function AdsComponent(posts) {
 
       setSideBarAdsData(totalData);
     } catch (error) {
-      console.log("Something went wrong.");
     }
   }
 

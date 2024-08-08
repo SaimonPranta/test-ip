@@ -26,7 +26,6 @@ export default function FontSlider({
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log("fontSize", newValue);
     setCustomeFontSize(newValue);
     setSingleStory({
       ...singleStory,

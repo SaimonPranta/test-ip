@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { parse } from "query-string";
 import axios from "axios";
-import LiveChat from "./Support/LiveChat/index"; 
+import LiveChat from "./Support/LiveChat/index";
 
 import {
   ChatIcon,
@@ -55,6 +55,7 @@ function Home(props) {
       supportPhone,
       liveChat: { roomId, messages },
       alerm,
+      ip
     },
     auth: { loggedIn },
   } = props;
@@ -88,10 +89,16 @@ function Home(props) {
     }
   }, [search]);
 
+
+
   useEffect(() => {
-    if (!name || !label || !dialCode || !supportPhone || !city) {
-      dispatch(getSiteInfo());
+    if ((!name || !label || !dialCode || !supportPhone || !city) && ip) {
+      dispatch(getSiteInfo(ip));
     }
+
+  }, [ip]);
+  
+  useEffect(() => {
     axios.get(`${BACKEND_URL}/pages`).then(({ data }) => {
       if (data.data) {
         setPages((state) => {
@@ -99,7 +106,7 @@ function Home(props) {
         });
       }
     });
-  }, []);
+  }, [])
 
   useEffect(() => {
     axios
@@ -188,7 +195,7 @@ function Home(props) {
 
   return (
     // <HomePageSkeleton />
-    <MainUI> 
+    <MainUI>
       <Login login={login} />
 
       {/* Center UI */}

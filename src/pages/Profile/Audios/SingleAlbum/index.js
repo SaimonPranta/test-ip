@@ -8,7 +8,6 @@ function SingleAlbum({ item, setSelectedMonth, setAlbumSelected }) {
     setSelectedMonth("September");
     // setSelectedMonth(item);
     setAlbumSelected(true);
-    // console.log("item", item);
   };
   return (
     <Grid

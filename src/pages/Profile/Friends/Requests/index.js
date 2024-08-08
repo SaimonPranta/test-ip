@@ -16,7 +16,6 @@ function Requests({ location, match: { url } }) {
   const { tab } = parse(location.search);
   const { working, requests, setRequests } = getFriendReq(tab);
 
-  // console.log("requested friend -------" ,requests);
   function editRequest(user) {
     const newFriends = requests.map((i) => {
       if (i.id === user.id) {

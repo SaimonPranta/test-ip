@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 
 function SingleAlbum({ item, setSelectedMonth, setAlbumSelected }) {
   
-  console.log("item", item);
-  
   const albumselectedHandler = (item) => {
     setSelectedMonth(item);
     setAlbumSelected(true);

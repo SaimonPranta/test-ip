@@ -26,6 +26,7 @@ export const initState = {
     sent: 0,
     received: 0,
   },
+  ip: ""
 };
 export const onSupportChatOpened = (state, { message }) => ({
   ...state,
@@ -56,5 +57,5 @@ export const onFetchSiteInfo = (
   },
   supportPhone: support,
   dialCode: dial_code,
-  
+
 });

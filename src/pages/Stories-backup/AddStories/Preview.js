@@ -42,11 +42,9 @@ function Preview({
   const [StoryText, setStoryText] = useState(AddText);
 
   const addStoryHandler = () => {
-    console.log("add storu", singleStory);
     setAddStory([""]);
     // setSingleStory;
 
-    console.log("Math floor Number index", singleStory.numberIndex);
 
     setTimeout(function () {
       setStoryList([...storyList, singleStory]);
@@ -63,9 +61,7 @@ function Preview({
   if (singleStory?.backgroundColorBool) {
   } else {
   }
-  useEffect(() => {
-    console.log("singleStory from preview :>> ", singleStory.background);
-  }, [singleStory]);
+ 
   return (
     <div>
       <Grid container>

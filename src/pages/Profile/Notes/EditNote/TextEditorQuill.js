@@ -108,26 +108,7 @@ function TextEditorQuill({ EditedNoteId, NoteUserName, setContent, content, oldC
 
 
 
-  // useEffect(() => {
-
-  //     axios
-  //       .get(`${BACKEND_URL}/profile/notes/${NoteUserName}/${EditedNoteId}`, {
-  //         headers: userHeader(),
-  //       })
-  //       .then(({ data }) => {
-  //         console.log("single note data into promise", data)
-  //         setSinglenote(data);
-  //         // setWorking(false);
-  //       })
-  //       .catch((err) => {
-  //         // setWorking(false);
-  //         console.log("err", )
-  //       });
-
-  // }, [EditedNoteId, NoteUserName,]);
-
-
-  //theme
+ 
   const theme = "snow";
 
   // font size
@@ -282,37 +263,7 @@ function TextEditorQuill({ EditedNoteId, NoteUserName, setContent, content, oldC
     formats,
     placeholder,
   });
-  // quill.clipboard.dangerouslyPasteHTML(oldContent);
-  // Image section
-  // Insert Image(selected by user) to quill
-  // const insertToEditor = (url) => {
-  //   const range = quill.getSelection();
-  //   quill.insertEmbed(range.index, "image", url);
-  // };
-
-  // Upload Image to Image Server such as AWS S3, Cloudinary, Cloud Storage, etc..
-  // const saveToServer = async (file) => {
-  //   const body = new FormData();
-  //   body.append("file", file);
-
-  //   const res = await fetch("Your Image Server URL", { method: "POST", body });
-  //   insertToEditor(res.uploadedImageUrl);
-  // };
-
-  // Open Dialog to select Image File
-  // const selectLocalImage = () => {
-  //   console.log("File");
-  //   const input = document.createElement("input");
-  //   input.setAttribute("type", "file");
-  //   input.setAttribute("accept", "image/*");
-  //   input.click();
-
-  //   input.onchange = () => {
-  //     const file = input.files[0];
-  //     console.log("File", file);
-  //     saveToServer(file);
-  //   };
-  // };
+  
 
   function selectLocalImage() {
     const input = document.createElement("input");
@@ -322,7 +273,6 @@ function TextEditorQuill({ EditedNoteId, NoteUserName, setContent, content, oldC
     // Listen upload local image and save to server
     input.onchange = () => {
       const file = input.files[0];
-      // console.log("file :>> ", file);
 
       // file type is only image.
       if (/^image\//.test(file.type)) {
@@ -370,7 +320,6 @@ function TextEditorQuill({ EditedNoteId, NoteUserName, setContent, content, oldC
         // quill.getModule("toolbar").addHandler("image", () => {
         //   selectLocalImage();
         // });
-        // console.log("toolbar");
       });
     }
   }, [quill, content]);
@@ -378,7 +327,6 @@ function TextEditorQuill({ EditedNoteId, NoteUserName, setContent, content, oldC
   React.useEffect(() => {
     if (quill) {
       // quill.clipboard.dangerouslyPasteHTML(`${content}`);
-      // console.log("efect er data", commingData);
     }
   }, []);
   return (

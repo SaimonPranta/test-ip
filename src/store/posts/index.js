@@ -36,8 +36,6 @@ const initState = {
 export default (state = initState, { type, payload }) => {
   let count = 0;
   count++
-console.log(count, "From Reducer Function ===>>>", state,"Type===>", type, "Payload===>", payload)
-
   let newPosts = [];
   switch (type) {
     
@@ -62,7 +60,6 @@ console.log(count, "From Reducer Function ===>>>", state,"Type===>", type, "Payl
       for (const post of newPost) {
         if ( state.posts.findIndex((p) => p.id === post.id) === -1) {
           newPosts.push(post);
-          console.log("newPosts <<====>> home" , newPosts)
         }
       }
       return {

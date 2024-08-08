@@ -6,7 +6,6 @@ import {
 } from "./action";
 
 export default (state = [], { type, payload }) => {
-  // console.log(state, 'state');
   switch (type) {
     case PUSH_NOTIFICATIONS:
       return [...payload, ...state];

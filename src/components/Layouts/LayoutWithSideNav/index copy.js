@@ -54,7 +54,6 @@ const Index = ({ children }) => {
       setActiveUserList(activeUser)
     });
   }, []);
-  // console.log(" 444444444444444444444444444444444444444444444444444444 ->>>>>>>>>>>>>>>>>>>> ",activeUserList)
     return (
     <main className="page-container">
       <section className="side-navigation">

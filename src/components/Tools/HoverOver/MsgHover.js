@@ -45,7 +45,7 @@ export default ({ children, title, placement = 'top', content, setReplyContent }
         </div>
           
         <div data-title="Forward">
-          <RiReplyLine style={{fontSize:'30px', marginLeft:'10px'}} onClick={()=>console.log('forward')} />
+          <RiReplyLine style={{fontSize:'30px', marginLeft:'10px'}} onClick={()=> {}} />
         </div>
           
           

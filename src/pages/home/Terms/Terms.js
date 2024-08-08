@@ -23,7 +23,6 @@ const Terms = () => {
         setTerms(data.content)
       })
       .catch((err) => {
-        console.log("something went wrong.")
       })
 
 

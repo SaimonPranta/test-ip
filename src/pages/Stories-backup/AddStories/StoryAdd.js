@@ -52,15 +52,9 @@ var backgroundData = [
 var colorData = ["Black", "Green", "violet", "Blue", "Yellow", "Red"];
 
 function StoryAdd({ location: { pathname }, auth }) {
-  console.log("auth", auth);
-  console.log("auth", auth.user.username);
-  // console.log("pathname", pathname);
-
-  // console.log("username username -----", auth.user.username);
 
   let username = auth.user.username;
 
-  console.log("auth username username ", username);
 
   let history = useHistory();
   const [AddText, setAddText] = useState("");
@@ -146,21 +140,12 @@ function StoryAdd({ location: { pathname }, auth }) {
     setResizeState({ width: size.width, height: size.height });
   };
   useEffect(() => {
-    // console.log("from useEffect singleStory :>> ", singleStory);
-    console.log(
-      "from useEffect customeBackgroundImage :>> ",
-      customeBackgroundImage
-    );
-    // setSingleStory({
-    //   ...singleStory,
-    //   background: BackgroundColor,
-    // });
+  
 
     // form data controller use effect
     const body = new FormData();
     body.append("file", storyImage);
 
-    // console.log("storyList :>> ", storyList);
     setBackgroundColorBool(singleStory?.backgroundColorBool);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
@@ -183,7 +168,6 @@ function StoryAdd({ location: { pathname }, auth }) {
 
   const handleFileChange = (e) => {
     e.preventDefault();
-    console.log(e.target.files[0].name);
   };
 
   function loadNewImage(file, name) {
@@ -192,7 +176,6 @@ function StoryAdd({ location: { pathname }, auth }) {
     setCustomeBackgroundImage(true);
     setBackgroundImage(file.name);
   }
-  console.log("setNewImage", newImage);
 
   function loadImgAvatar() {
     if (BackgroundImage) {
@@ -215,20 +198,15 @@ function StoryAdd({ location: { pathname }, auth }) {
         headers: userHeader(),
       })
       .then((res) => {
-        // console.log("story data ", res.data.Story);
         setResponseDraftData(res.data.Story);
         // totalData = res.data.Story.length;
-        console.log("total data ", totalData);
-        console.log("total data ", typeof totalData);
         res.data.Story.map((singleStory) => {
           if (singleStory.saved === "draft") {
-            console.log("drafted data", singleStory._id);
             axios
               .put(`${BACKEND_URL}/stories/${singleStory._id}`, bodyData, {
                 headers: userHeader(),
               })
               .then(({ data }) => {
-                console.log("responced data WITHOPUT CUSTOME IMAGE ", data);
               })
               .catch((err) => {
                 setEditing(false);
@@ -246,7 +224,6 @@ function StoryAdd({ location: { pathname }, auth }) {
       goToPreviousPath();
     }, 500);
   }
-  // console.log("responseDraftData1", responseDraftData);
 
   // save story as a draft
   const onNext = () => {
@@ -300,7 +277,6 @@ function StoryAdd({ location: { pathname }, auth }) {
               headers: userHeader(),
             })
             .then(({ data }) => {
-              console.log("responced data WITHOPUT CUSTOME IMAGE ", data);
             })
             .catch((err) => {
               setEditing(false);
@@ -311,7 +287,6 @@ function StoryAdd({ location: { pathname }, auth }) {
               headers: userHeader(),
             })
             .then(({ data }) => {
-              console.log("responced data come form post return", data);
             })
             .catch((err) => {
               setEditing(false);
@@ -327,7 +302,6 @@ function StoryAdd({ location: { pathname }, auth }) {
   };
 
   useEffect(() => {
-    console.log("customeDuration", customeDuration);
   }, [
     CustomColor,
     AddText,
@@ -559,7 +533,6 @@ function StoryAdd({ location: { pathname }, auth }) {
                           ...singleStory,
                           color: colorData[index],
                         });
-                        // console.log( "CustomColor from color change handler", index);
                       }}>
                       {" "}
                       <BiFontColor />{" "}
@@ -746,60 +719,4 @@ function StoryAdd({ location: { pathname }, auth }) {
 }
 
 export default connect((store) => ({ auth: store.auth }))(withRouter(StoryAdd));
-
-// const ImageLayer = () => {
-//   const datas = [
-//     {
-//       imageId: "asdasdasdasdaosdjkoajsd",
-//       imageType: "image/jpeg",
-//       date: new Date().toISOString(),
-//       name: "xps/jpeg",
-//       type: "story",
-//     },
-//     {
-//       imageId: "asdasdasdasdaosdjkoajsd",
-//       imageType: "image/jpeg",
-//       date: new Date().toISOString(),
-//       name: "xps/jpeg",
-//       type: "story",
-//     },
-//     {
-//       imageId: "asdasdasdasdaosdjkoajsd",
-//       imageType: "image/jpeg",
-//       date: new Date().toISOString(),
-//       name: "xps/jpeg",
-//       type: "story",
-//     },
-//     {
-//       imageId: "asdasdasdasdaosdjkoajsd",
-//       imageType: "image/jpeg",
-//       date: new Date().toISOString(),
-//       name: "xps/jpeg",
-//       type: "story",
-//     },
-//     {
-//       imageId: "asdasdasdasdaosdjkoajsd",
-//       imageType: "image/jpeg",
-//       date: new Date().toISOString(),
-//       name: "xps/jpeg",
-//       type: "story",
-//     },
-//   ];
-
-//   const [customeData, setCustomeData] = useState();
-
-//   return (
-//     <div>
-//       <p>This is a dummy section for make app simple as faster as it was </p>
-//       {customeData.map((singleSection) => (
-//         <div>{singleSection}</div>
-//       ))}
-
-//       {datas.forEach(() => {})}
-//       {datas.forEach((data) => {
-//         console.log("Entered");
-//         return <p>{data} </p>;
-//       })}
-//     </div>
-//   );
-// };
+ 

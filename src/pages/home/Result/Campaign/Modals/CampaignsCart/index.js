@@ -3,7 +3,6 @@ import "./style.scss"
 import { Link } from "react-router-dom"
 
 const Index = ({item}) => {
-  console.log("item ======================>>>",item)
   return (
     <div
       className="campaign-cart"

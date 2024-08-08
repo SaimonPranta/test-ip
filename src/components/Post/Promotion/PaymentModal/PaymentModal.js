@@ -86,7 +86,6 @@ const PaymentModal = ({ show, handleClose, postId, setPStatus, total }) => {
 
 
         } catch (error) {
-            console.log("Error comes from try catch", error);
         }
 
 

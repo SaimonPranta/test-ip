@@ -30,10 +30,6 @@ class ColorPicker extends React.Component {
   handleChange = (color) => {
     this.setState({ color: color.rgb });
     this.props.setColor({ color: color.rgb });
-    console.log("color from color picker ", color.rgb.r);
-    console.log("color from color picker ", color.rgb.g);
-    console.log("color from color picker ", color.rgb.b);
-    console.log("color from color picker ", color.rgb.a);
 
     this.props.setSingleStory({
       ...this.props.singleStory,

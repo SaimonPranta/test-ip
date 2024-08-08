@@ -31,8 +31,6 @@ export function approve(id, uid) {
 }
 // changeAdminStatus;
 export function adminStatus(id, uid) {
-  // console.log(":id", id)
-  // console.log(":uid", uid);
   return axios.put(
     `${BACKEND_URL}/groups/${id}/changeAdminStatus`,
     { uid },

@@ -49,7 +49,6 @@ export function storeUpdateProduct(product) {
 }
 
 export function storeDeleteMyProduct(id) {
-  console.log("sdfa", id)
   return { type: STORE_DELETE_PRODUCT, payload: id }
 }
 

@@ -5,7 +5,6 @@ import { AlertTitle, Alert } from '@material-ui/lab';
 // eslint-disable-next-line
 export default (WrappedComponent) => {
   return (props) => {
-    console.log("props ==========>>", props)
     const {
       user: { approved, banned, rejected },
     } = props.auth;

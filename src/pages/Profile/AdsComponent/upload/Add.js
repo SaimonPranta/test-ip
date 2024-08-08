@@ -36,7 +36,6 @@ const Add = () => {
         headers: userHeader(),
       })
       .then(({ data }) => {
-        console.log("responced data WITHOPUT CUSTOME IMAGE ", data);
       })
       .catch((err) => {
         throw err;
@@ -44,7 +43,6 @@ const Add = () => {
   }, []);
 
   useEffect(() => {
-    // console.log("fullData", fullData);
   }, [fullData]);
 
   return (

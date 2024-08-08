@@ -21,7 +21,6 @@ export const UPDATE_INDICATOR = 'UPDATE_INDICATOR';
 //   return { type: UPDATE_DESCRIPTION, payload: axios.get(`${BACKEND_URL}/profile/description`) }
 // }
 export function login(username, password ) {
-  console.log("username, password, reCaptcha ====>", username, password)
   return { type: LOGIN, payload: axios.post(`${BACKEND_URL}/user/auth/login`, { username, password }) };
 }
 

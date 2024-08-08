@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Provider, useSelector } from "react-redux";
+import { Provider } from "react-redux";
 import HomePageSkeleton from "./skeleton/HomePageSkeleton";
 import { positions, Provider as ReactAlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
@@ -31,6 +31,8 @@ import AddReel from "./pages/Reels/AddReels/index";
 import axios from "axios";
 import { BACKEND_URL } from "./shared/constants/Variables";
 import { addCommercial } from "./store/Commercial/actions";
+import getMyIp from "./shared/functions/getMyIp";
+import { setIP } from "./store/site/action";
 
 const RemoteWrapper = ({ children }) => (
   <div
@@ -83,6 +85,11 @@ function handelRightClick(event) {
 
 function App() {
   const [pages, setPages] = useState([]);
+
+  useEffect(async () => {
+  const actionInfo = await setIP()
+    store.dispatch(actionInfo);
+  }, [])
 
   useEffect(() => {
     store.dispatch(auto());

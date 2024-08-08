@@ -56,7 +56,6 @@ const DisplayAds = ({ loggedIn, item }) => {
       );
       setMediaUrlData(data?.data);
     } catch (error) {
-      console.log("Something went wrong.");
     }
   };
 

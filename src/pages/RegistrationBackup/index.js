@@ -469,7 +469,6 @@ const Index = () => {
           }
         })
         .catch((error) => {
-          console.log(error)
           setCondition((state) => {
             return {
               ...state,
@@ -507,12 +506,10 @@ const Index = () => {
       .put(`${BACKEND_URL}/user/auth/verification/verify-info`, formData, { headers: userHeader() })
       .then((data) => {
         if (data.data) {
-          // return history.push(`/`)
           window.location.href = `/`
         }
       })
       .catch((error) => {
-        console.log(error)
       });
   }
 

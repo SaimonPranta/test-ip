@@ -157,7 +157,6 @@ function Photos({ username, privacy, changePrivacy, isMe, history }) {
     setEditing(true);
     const t = pictitle.trim();
     const d = des.trim();
-    // console.log("d :>> ", pictitle);
     axios
       .put(
         `${BACKEND_URL}/profile/media/title/${edit.id}`,

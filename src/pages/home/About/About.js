@@ -19,7 +19,6 @@ const About = () => {
         setAbout(data.content);
       })
       .catch((err) => {
-        console.log("something went wrong.")
       });
 
 

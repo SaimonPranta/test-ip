@@ -69,49 +69,7 @@ function EditNote() {
 
 
 
-  // console.log("single data all  1 : >> ", commingData);
-
-  // const [content, setContent] = useState(commingData);
-
-  // console.log("content data  :>> ", commingData);
-  // console.log("content data :>> ", commingData.note);
-
-  // useEffect(() => {
-  //   if (!!EditedNoteId && !!NoteUserName) {
-  //     axios
-  //       .get(`${BACKEND_URL}/profile/notes/${NoteUserName}/${EditedNoteId}`, {
-  //         headers: userHeader(),
-  //       })
-  //       .then(({ data }) => {
-  //         console.log("single note data into promise", data)
-  //         setNote(data);
-  //         // setWorking(false);
-  //       })
-  //       .catch((err) => {
-  //         // setWorking(false);
-  //         console.log("err", )
-  //       });
-  //   }
-  // }, [EditedNoteId, NoteUserName]);
-
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`${BACKEND_URL}/profile/notes/${NoteUserName}/${EditedNoteId}`, {
-  //       headers: userHeader(),
-  //     })
-  //     .then(({ data }) => {
-  //       setNote(data);
-  //       setWorking(false);
-  //     })
-  //     .catch((err) => {
-  //       setWorking(false);
-  //       setError("Something went wrong.");
-  //     });
-
-  // }, [EditedNoteId] )
-
-
+  
 
   function handleWebLinkAddressChange(e) {
     if (checkWebaddresssRegex.test(e.target.value)) {

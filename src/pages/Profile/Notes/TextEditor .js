@@ -18,7 +18,6 @@
 
 //   render() {
 //     const { editorState } = this.state;
-//     console.log(draftToHtml(convertToRaw(editorState.getCurrentContent())));
 //     return (
 //       <div>
 //         <Editor

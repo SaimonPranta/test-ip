@@ -137,7 +137,6 @@ function Cover({ profile, setProfile, history, isMe, dispatch, chat, auth }) {
     if (edit === "avatar" && newImage) {
       return URL.createObjectURL(newImage);
     } else {
-      // console.log("profile.avatar", profile.avatar);
       return getUserAvatar(profile.avatar, profile.gender, profile.username);
     }
   }
@@ -199,7 +198,6 @@ function Cover({ profile, setProfile, history, isMe, dispatch, chat, auth }) {
     }
   }
   function openCompose() {
-    console.log(auth);
     dispatch(openMailCompose(profile.username));
   }
   function blockProfile() {

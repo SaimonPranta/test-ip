@@ -150,7 +150,6 @@ socket.emit("hello" , {hello: "hello"})
     let unmounted = false;
     if (!unmounted) {
       socket.on("send_user_message_to_user", (data) => {
-        console.log("from send_user_message_to_user ++");
 
         setMessages([...messages, data]);
         if (!data.client) {
@@ -184,7 +183,6 @@ socket.emit("hello" , {hello: "hello"})
   });
 
   const handleTest  =() => {
-    console.log("hello")
     socket.emit("send-message", {hello: "slfd"});
   }
 
@@ -205,8 +203,6 @@ socket.emit("hello" , {hello: "hello"})
 
           <Scroll className="conv_div">
             {messages.map(({ id, client, message, date, image }, index) => {
-              console.log("message ======>>>", message);
-
               return (
                 <div key={index} className="o-h" style={{ margin: "10px 0" }}>
                   {/* onHover sow date */}

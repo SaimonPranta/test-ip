@@ -108,7 +108,6 @@ export default ({ next, prev, src, title = "", duration }) => {
   }
 
   function pauseOnScroll() {
-    // console.log("sdsdfsd");
     audio.pause();
     setPaused(true);
   }

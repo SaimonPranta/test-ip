@@ -109,7 +109,6 @@ const Index = ({
       })
       .then((res) => {})
       .catch((err) => {
-        console.log(err);
       });
   };
 
@@ -187,7 +186,6 @@ const Index = ({
   }
 
   function join() {
-    // // console.log(group);
     setWorking(true);
     getQuestions(group.id)
       .then(({ data }) => {

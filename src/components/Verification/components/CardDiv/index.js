@@ -48,7 +48,6 @@ const index = ({
 
             })
             .catch(error => {
-                console.log(error)
             })
     }
 

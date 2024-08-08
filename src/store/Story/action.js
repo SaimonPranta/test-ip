@@ -21,7 +21,6 @@ export const updateStory = (updateStories, uploadImageArray) => {
   };
 };
 export const deleteStorySocket = () => {
-  console.log("Socket on reducer action");
   return {
     type: actionType.DELETE_STORY_SOCKET,
     // payload: updateStories,

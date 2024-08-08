@@ -39,7 +39,6 @@ const Index = () => {
     useEffect(() => {
         axios.get(`${BACKEND_URL}/ads/sidenav-ads`, { headers: userHeader() })
             .then(({data}) => {
-                console.log("data ===========>>>>", data)
                 if(data.data){
                     setAdsList(data.data)
                 }

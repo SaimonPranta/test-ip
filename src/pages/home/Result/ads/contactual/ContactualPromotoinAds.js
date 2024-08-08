@@ -9,8 +9,6 @@ import { getUserAvatar } from "../../../../../shared/functions";
 
 const ContactualPromotionAds = ({ item, loggedIn }) => {
   const history = useHistory();
-  console.log("item =======>>>", item.postId
-  )
   return (
     <>
       <span className="ads-text">Sponsored</span>

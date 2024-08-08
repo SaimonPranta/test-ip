@@ -119,10 +119,7 @@ export function getGroups(username,groupid){
 }
 
 export function sendMessageToGroup({type, myid, groupid, message, image}){
-  // console.log(type,'type')
-  // console.log(myid,'myid')
-  // console.log(groupid,'groupid')
-  // console.log(message,'message')
+ 
   socket.emit(send_message_to_group, type, myid, groupid, message, image)
 }
 
@@ -167,7 +164,6 @@ export function hidePost(postId) {
 
 
 export function reactPost(postId, reaction) {
-  console.log('React tion', reaction);
   socket.emit(react, { postId, reaction, date: new Date().toISOString() });
 }
 export function unreactPost(postId) {

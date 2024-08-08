@@ -98,7 +98,6 @@ export default ({
           setLocation(data);
         });
     } catch (error) {
-      console.log(error);
     }
 
     // setLocation("ipo okay");

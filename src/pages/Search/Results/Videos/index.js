@@ -6,8 +6,6 @@ import Video from './Video';
 
 export default ({ videos = [], search }) => {
 
-  // console.log("videos ----->",videos);
-
   if (videos.length > 0) {
     return (
       <Gallery>

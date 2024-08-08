@@ -35,52 +35,7 @@ function Feed({
 const username = useSelector(state => state?.auth?.user?.username)
 
 
-  // console.log("logged in newsFeed user user name -----", store.getState().auth.user.username);
-  // console.log("logged in newsFeed user user name -----", username);
-
-  // useEffect(() => {
-  //   if (!!postId) {
-  //     getSinglePost(postId);
-  //   } else {
-  //     getFeeds(offset);
-  //   }
-  //   return () => {
-  //     dispatch({ type: "SET_POST_DEFAULT" });
-  //   };
-  // }, [offset, postId]);
-  // useEffect(() => {
-  //   setWorking(true);
-  //   axios
-  //     .get(`${BACKEND_URL}/posts/news`, { headers: userHeader() })
-  //     .then(({ data }) => {
-  //       setUpdates(data);
-  //       setWorking(false);
-  //     })
-  //     .catch((err) => {
-  //       setWorking(false);
-  //       throw err;
-  //     });
-  //   return () => {
-  //     dispatch({ type: "SET_POST_DEFAULT" });
-  //   };
-  // }, []);
-
-  // useEffect(() => {}, [window.scrollY]);
-
-  // if (floading) {
-  //   document.getElementsByClassName("mainContent")[0].style.overflow = "hidden";
-  // }
-
-  // useEffect(() => {
-  //   let mount = true;
-
-  //   if(mount) {
-  //     floading ? document.getElementsByClassName('mainContent')[0].style.overflow = "hidden" : document.getElementsByClassName('mainContent')[0].style.overflow = "inherit";
-  //   }
-  //   return () => {
-  //     mount = false;
-  //   };
-  // }, [floading]);
+ 
 
   //mount code START
   useEffect(() => {
@@ -101,49 +56,19 @@ const username = useSelector(state => state?.auth?.user?.username)
       mount = true;
     };
   }, [offset, postId]);
-console.log("state ===============>", posts)
-  
-  // useEffect(() => {
-  //   let mount = false;
-  //   setWorking(true);
-  //   if(!mount) {
-  //     axios
-  //     .get(`${BACKEND_URL}/posts/news`, { headers: userHeader() })
-  //     .then(({ data }) => {
-  //       setUpdates(data);
-  //       setWorking(false);
-  //     })
-  //     .catch((err) => {
-  //       setWorking(false);
-  //       throw err;
-  //     });
-  //     dispatch({ type: "SET_POST_DEFAULT" });
-  //   }
-  //     return () => {
-  //       mount = true
-  //     }
-  // }, []);
-  //mount code END
+ 
 
   const showWhereClicked = (e) => {
-    // // console.log(`you have clicked X:${e.screenX} Y:${e.screenY}`);
-    // if (e.screenY <= 120) {
-    //   alert("ok");
-    // }
-    // do stuff
+ 
   };
-  console.log("state ===============>", posts)
 
   // Scroll issue fix area start
   window.onscroll = function () {
-    // console.log(window.innerHeight + document.documentElement.scrollTop);
 
     if (window.scrollY === 0 && offset !== 0 && posts[0]) {
       dispatch({ type: "Post Loading" });
       setOffset(offset - 25);
-      // const mainContent = (document.getElementsByClassName(
-      //   "mainContent"
-      // )[0].style.overflow = "inherit");
+   
     }
 
     if (
@@ -167,7 +92,6 @@ console.log("state ===============>", posts)
   };
   // Scroll issue fix area end
 
-  console.log("state ===============>", posts)
 
   return (
     <div>

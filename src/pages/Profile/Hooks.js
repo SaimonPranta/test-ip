@@ -24,7 +24,6 @@ export function getProfile(username) {
       .then(({ data }) => {
         setProfile(data);
         setWorking(false);
-        // console.log("profile all :>> ", data);
       })
       .catch((err) => {
         if (axios.isCancel(error)) {
@@ -299,8 +298,6 @@ export function getNotes(username, sortBy) {
   const [notes, setNotes] = useState([]);
   const [counts, setCounts] = useState(0);
   const [noteSortBy, setNoteSortBy] = useState(0);
-
-  console.log("user ", username)
 
 
   useEffect(() => {

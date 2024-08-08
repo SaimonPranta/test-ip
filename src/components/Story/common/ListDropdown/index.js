@@ -22,7 +22,6 @@ const ListDropdown = ({
 }) => {
   const handleAddDropdownData = (item, index) => {
     if (type === "privacy") {
-      console.log(totalDataItem);
       setDropdownData(item);
       setShowListDropdown((prevState) => {
         return { ...prevState, privacy: false };
@@ -51,7 +50,6 @@ const ListDropdown = ({
       updatedValue = updatedValue.map((story, storyIndex) => {
         if (activeItem === storyIndex) {
           story.duration = getFutureDate(item.value);
-          console.log("future date: ", getFutureDate(item.value));
         }
         return story;
       });
@@ -71,10 +69,8 @@ const ListDropdown = ({
         .then((data) => {
           setOpenModal(!openModal);
           setRender(!render)
-          console.log(data);
         })
         .catch((err) => {
-          console.log(err);
         });
     }
   };

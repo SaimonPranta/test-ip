@@ -1,7 +1,6 @@
 import React from "react";
 
 const SingleNews = ({ news }) => {
-  console.log("data", news);
   return (
     <div className="slide">
       <img className="news-thumbnail" src="" alt="" />

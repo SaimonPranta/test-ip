@@ -92,7 +92,7 @@ const Index = () => {
         });
         axios
           .put(`${BACKEND_URL}/user/auth/referral/click`, { referBy: referBy })
-          .then((data) => console.log(data.data));
+          .then((data) => {});
       }
     };
     const timeout = setTimeout(calApi, 5000);
@@ -381,7 +381,6 @@ const Index = () => {
       return { ...pre, [name]: value };
     });
   };
-  console.log("warning ====>>>", warning);
   const warningDetector = (name) => {
     if (name === warning) {
       return "warning";
@@ -467,7 +466,6 @@ const Index = () => {
           }
         })
         .catch((error) => {
-          console.log(error);
           setCondition((state) => {
             return {
               ...state,
@@ -526,7 +524,6 @@ const Index = () => {
       await sendPhoneOtp();
     } catch (error) {
       setOtpSend(false);
-      console.log("firebase phone auth error=====>", error);
       removeRecaptchaContainer();
     }
   };
@@ -543,7 +540,6 @@ const Index = () => {
       .catch((error) => {
         setOtpSend(false);
         removeRecaptchaContainer();
-        console.log("firebase phone auth error=====>", error);
       });
   };
 
@@ -560,7 +556,6 @@ const Index = () => {
           setOtpError(false);
         })
         .catch((error) => {
-          console.log("otp verify error", error);
           setOtpError(true);
           setOtpProcess(false);
         });

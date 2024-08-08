@@ -103,12 +103,10 @@ const StoryDetails = ({
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("User  data", res.data);
         setUserInfo(res.data);
       })
       .catch((err) => console.error(err));
   };
-  console.log("userInfo", userInfo.avatar);
 
   // deleteHandler;
   const deleteHandler = (id) => {
@@ -121,45 +119,34 @@ const StoryDetails = ({
   };
 
   const reactionHandler = (reaction) => {
-    console.log("Reaction selected", reaction);
   };
 
   const setSelectedPage = (index) => {
     setUserIndex(index.index);
   };
-  console.log("setSelectedPage", userIndex);
-
-  // console.log("Story user id", storyId);
   useEffect(() => {
     axios
       .get(`${BACKEND_URL}/stories/${storyId}`, {
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("Rersponses data", res.data);
         // setAllStoryByUser(res.data);
         dispatch(getAllStory(res.data));
       })
       .catch((err) => console.error(err));
   }, [storyId, existedUser]);
 
-  // console.log("Story user id", storyId);
   useEffect(() => {
     axios
       .get(`${BACKEND_URL}/stories/userinfo/${storyId}`, {
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("User  data", res.data);
         setUserInfo(res.data);
       })
       .catch((err) => console.error(err));
 
-    // Delete Story
-    // socket.emit("delete_story", () => {
-    //   console.log("called Socket");
-    //   // store.dispatch(deleteStorySocket());
-    // });
+   
   }, []);
 
   useEffect(() => {
@@ -168,7 +155,6 @@ const StoryDetails = ({
         headers: userHeader(),
       })
       .then((res) => {
-        console.log("UniqueUser", res.data.UniqueUser);
         setAllStoryUser(res.data.UniqueUser);
       })
       .catch((err) => console.error(err));
@@ -184,8 +170,6 @@ const StoryDetails = ({
     }
   }, [StoryDuration]);
 
-  console.log("comment", comment);
-  useEffect(() => {}, [comment]);
 
   return (
     <div className="StoryDetrails">

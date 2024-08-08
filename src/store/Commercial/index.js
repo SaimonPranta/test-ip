@@ -10,12 +10,9 @@ const initState = {
 }
 
 export default (state = initState, { type, payload }) => {
-    console.log("type ==>>>", type)
-    console.log("payload ==>>>", payload)
 
     switch (type) {
         case ADD_COMMERCIAL:
-            console.log("Hello from the case condition")
             return {
                 ...state,
                 _id: payload._id,
@@ -26,8 +23,6 @@ export default (state = initState, { type, payload }) => {
                 email: payload.email,
             }
         default:
-            console.log("Hello from the Default condition")
-
             return state
     }
 }

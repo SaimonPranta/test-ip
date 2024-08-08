@@ -93,7 +93,6 @@ const ReelSlider = ({ data, openModal, setOpenModal, render, setRender }) => {
   }, [sliderContainerRef]);
 
   const handleVideoPlaying = (type) => {
-    console.log(videoRef);
     if (type === "play") {
       setIsPlaying(true);
       videoRef?.current[currentIndex]?.play();

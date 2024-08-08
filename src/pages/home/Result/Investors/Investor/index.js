@@ -17,7 +17,6 @@ function Investor({ investor }) {
   }, [cardRef]);
 
   const handleInvestorDetails = (id) => {
-    console.log("called 1");
     history.push(`/investors/${id}`);
   };
   return (

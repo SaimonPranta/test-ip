@@ -115,10 +115,8 @@ const StorySlider = ({ data, openModal, setOpenModal, render, setRender }) => {
 
   useEffect(() => {
     if (data[currentIndex]?.mediaType === "video/mp4") {
-      console.log("play");
       videoRef?.current?.play();
     } else {
-      console.log("pause");
       videoRef?.current?.pause();
     }
   }, [currentIndex, data]);

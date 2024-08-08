@@ -43,7 +43,6 @@ const Index = ({
 
   const handleMouseDown = (e, index, storyIndex) => {
     if (activeText === index && activeStory === storyIndex) {
-      console.log(activeText, index, activeStory);
       e.preventDefault();
       setActiveText(index);
       setIsDrag(true);
@@ -147,7 +146,7 @@ const Index = ({
         setYAxis(e.pageY);
       }
 
-      console.log(activeStory);
+      (activeStory);
     }
   });
 
@@ -171,7 +170,6 @@ const Index = ({
   };
 
   const handleDeleteSelectedText = (index) => {
-    console.log(activeText, activeStory);
     let updatedValue = [...totalStories];
 
     updatedValue = updatedValue.map((story, storyIdx) => {

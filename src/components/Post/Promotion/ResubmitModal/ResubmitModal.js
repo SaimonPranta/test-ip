@@ -33,7 +33,6 @@ const ResubmitModal = ({ show, handleClose, ads, postId, setPStatus, setPeditSta
             handleClose();
 
         } catch (error) {
-            console.log("Error comes from update and change status users ", error);
         }
 
     }

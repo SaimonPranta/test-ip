@@ -54,10 +54,7 @@ const initialState = {
 
 // eslint-disable-next-line
 export default (state = initialState, { type, payload }) => { 
-console.log(`hello from "AUTO_LOGIN" `, {
-  type,
-  payload
-})
+ 
   switch (type) {
     case REGISTER + PENDING:
       return {
@@ -75,7 +72,6 @@ console.log(`hello from "AUTO_LOGIN" `, {
         loggingIn: true,
       };
     case REGISTER:
-      console.log("enter to the condition =====>>>");
       return onLoginFulfilled(state, payload);
     case LOGIN + PENDING:
       return {
@@ -85,12 +81,9 @@ console.log(`hello from "AUTO_LOGIN" `, {
         loginErrorType: null,
       };
     case LOGIN + FULFILLED:
-      // console.log('login fullfill', payload);
       return onLoginFulfilled(state, payload);
 
     case AFTER_RESET_LOGIN:
-      // console.log('login fullfill', payload);
-      console.log("echeking", payload);
       return onLoginFulfilled(state, payload);
 
     case LOGIN + REJECTED:
@@ -181,7 +174,6 @@ function onLoginFulfilled(state, { data: { user, token } }) {
   localStorage.setItem("u_exp", u_exp);
   localStorage.setItem("u_t", token);
   localStorage.setItem("u", JSON.stringify(user));
-  // console.log('login fullfil user', user);
   return {
     ...state,
     user,

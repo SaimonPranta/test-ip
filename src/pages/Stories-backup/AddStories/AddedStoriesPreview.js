@@ -18,8 +18,6 @@ function AddedStoriesPreview({
   username
 }) {
 
-  console.log("username username", username)
-
   const [deletedArray, setDeletedAraay] = useState(null);
   // const [responseData, setResponseData] = useState([]);
   const [responseFullData, setResponseFullData] = useState([]);
@@ -28,13 +26,11 @@ function AddedStoriesPreview({
     return item.numberIndex !== deletedArray;
   });
 
-  // console.log(restOfArrayValue, "restOfArrayValue");
-
   const deleteHandler = (id) => {
     setValue(value - 1);
     axios
       .delete(`${BACKEND_URL}/stories/story/${id}`)
-      .then(() => console.log("Delete successful"));
+      .then(() =>{});
   };
 
   useEffect(() => {
@@ -43,8 +39,6 @@ function AddedStoriesPreview({
         headers: userHeader(),
       })
       .then((res) => {
-        // console.log("story data ", res.data);
-
         const draftedStoryes = res.data.uploadedImage.filter(
           (singleStory) => singleStory.saved === "draft"
         );
@@ -52,12 +46,10 @@ function AddedStoriesPreview({
       })
       .catch((err) => console.error(err));
 
-    // console.log("restOfArrayValue3", restOfArrayValue3);
   }, [value]);
   useEffect(() => {}, [deleteHandler  ]);
   // }, [responseData]);
 
-  // console.log("responseData one", responseData);
 
   return (
     <div style={{ display: "flex" }}>
@@ -167,7 +159,7 @@ function SingleStore({ data, story, setDeletedAraay }) {
         x
       </p>
       <div
-        onClick={() => console.log("clicked", story)}
+ 
         className="singlePreview"
         style={{
           height: "15vh",

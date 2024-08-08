@@ -17,10 +17,8 @@ function NewNote() {
   const [buttonActive, setButtonActive] = useState(false);
 
   const EditedContentHandler = (value) => {
-    // console.log(value);
     setContent(value);
   };
-  // console.log(content);
 
   function handleChange(_) {
     setTitle(_.target.value);
@@ -45,7 +43,6 @@ function NewNote() {
   const submitHandler = () => {
 
     setButtonActive(false)
-    // console.log("closer ", content);
     localStorage.setItem("dummtData", content);
     axios.post(
       `${BACKEND_URL}/profile/notes/addNote`,

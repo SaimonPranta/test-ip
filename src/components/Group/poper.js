@@ -35,13 +35,11 @@ function Poper({ groupid, setGroups, groups, handleOpen }) {
   function onDelete() {
     axios
       .delete(`${BACKEND_URL}/groups/${groupid}`, { headers: userHeader() })
-      .then(() => console.log("Delete successful"))
+      .then(() => {})
       .catch((er) => {
-        console.log(er.message);
       });
 
     const updateGroups = groups.filter((group) => group.id !== groupid);
-    console.log(updateGroups);
     setGroups(updateGroups);
 
     setDeleteModal(false);

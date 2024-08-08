@@ -124,8 +124,6 @@ function TextEditorQuill({ setContent }) {
   });
   fontSizeArr.forEach(function (font) {
     var fontSize = getFontName(font);
-    // console.log("ok", font);
-    // console.log(fontSize, "ok");
     fontStyles +=
       ".ql-snow .ql-picker.ql-size .ql-picker-label[data-value='" +
       fontSize +

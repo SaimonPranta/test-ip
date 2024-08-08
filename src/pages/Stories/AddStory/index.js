@@ -136,7 +136,6 @@ const Index = () => {
 
   const handleFileSelect = (e) => {
     const file = e.target.files[0];
-    console.log(file);
     const convert = URL.createObjectURL(e.target.files[0]);
     setStoryBackground((prevState) => [
       ...prevState,
@@ -201,9 +200,7 @@ const Index = () => {
     }
   }, [totalStories, activeStory, activeText]);
 
-  useEffect(() => {
-    console.log("total stories", totalStories);
-  }, [totalStories]);
+ 
 
   const handleShareToStory = async () => {
     const data = await Promise.all(
@@ -241,13 +238,11 @@ const Index = () => {
         }
       })
       .catch((error) => {
-        console.log(error);
       });
     setDisableButton(true);
   };
 
   const convertUrlToFile = async (inputUrl) => {
-    console.log(inputUrl);
     try {
       const response = await fetch(inputUrl);
       const blob = await response.blob();

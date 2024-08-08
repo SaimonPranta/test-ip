@@ -7,12 +7,19 @@ import {
   RECEIVED_ALERM,
   SENT_ALERM,
   CLOSE_ALERM,
+  FETCH_MY_IP
 } from "./type";
 import { BACKEND_URL } from "../../shared/constants/Variables";
+import getMyIp from "../../shared/functions/getMyIp";
 
-export const getSiteInfo = () => {
-  const getUserDetails = axios.get(`${BACKEND_URL}/api/site`);
- 
+export const getSiteInfo = (ip) => {
+
+  const getUserDetails = axios.get(`${BACKEND_URL}/api/site`, {
+    headers: {
+      "frontend-ip-address": ip
+    }
+  });
+
   return {
     type: FETCH_SITE_INFO,
     payload: getUserDetails,
@@ -40,4 +47,8 @@ export function ringSentAlerm() {
 
 export function closeRingReceivedAlerm() {
   return { type: CLOSE_ALERM };
+}
+export const setIP = async () => {
+  const ip = await getMyIp()
+  return { type: FETCH_MY_IP, payload: ip };
 }

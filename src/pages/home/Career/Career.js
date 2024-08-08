@@ -18,7 +18,6 @@ const Career = () => {
                 setCareer(data.content);
             })
             .catch((err) => {
-                console.log("something went wrong.")
             })
     }, []);
 

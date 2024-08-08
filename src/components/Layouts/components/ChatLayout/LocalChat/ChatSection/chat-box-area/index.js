@@ -61,7 +61,6 @@ const Index = ({
 
   useEffect(() => {
     socket.on("get-all-message", (messageData) => {
-      console.log("messageData", messageData);
       setMessages(messageData);
     });
     return () => {

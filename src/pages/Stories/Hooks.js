@@ -32,7 +32,7 @@ export function getStories(render, setRender) {
         //     return;
         //   }
 
-        console.log(err);
+        
         });
       return () => cancel();
     }, [render]);

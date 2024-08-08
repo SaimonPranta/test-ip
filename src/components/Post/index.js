@@ -105,12 +105,10 @@ const Index = ({
       ).then(({ data }) => {
         setReport(data?.data);
       }).catch((err) => {
-        console.log("Error comes from catch", err);
       })
 
     }
     catch (error) {
-      console.log("error happens in api calls", error);
     }
 
   }
@@ -129,7 +127,6 @@ const Index = ({
     ).then(({ data }) => {
       setAds(data.data[0]);
     }).catch((err) => {
-      console.log("Error", err);
     });
 
   };

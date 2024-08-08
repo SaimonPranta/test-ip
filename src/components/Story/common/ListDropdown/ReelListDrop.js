@@ -25,7 +25,6 @@ export const ReelListDropdown = ({
       });
     }
     if (item.name === "Delete") {
-      console.log("Delete");
     }
   };
 

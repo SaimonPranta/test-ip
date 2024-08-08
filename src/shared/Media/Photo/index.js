@@ -3,7 +3,6 @@ import { getUrl } from "../../../shared/functions";
 export default ({ src }) => {
   const [fullscreen, setFullscreen] = useState(false);
   let img = useRef();
-  // console.log(img);
   function toggleFullscreen() {
     if (fullscreen) {
       setFullscreen(false);
@@ -16,7 +15,6 @@ export default ({ src }) => {
         .catch((err) => err);
     }
   }
-  console.log(src, "src");
   return (
     <div>
       <img

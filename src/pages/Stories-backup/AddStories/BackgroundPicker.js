@@ -35,7 +35,6 @@ class BackgroundPicker extends React.Component {
     //   b: color.rgb,
     //   a: color.rgb.a,
     // });
-    // console.log("Color :>> ", color.rgb);
     // this.props.setSingleStory({
     //   ...this.props.singleStory,
     //   BackgroundColor: {
@@ -97,7 +96,6 @@ class BackgroundPicker extends React.Component {
                 // backgroundColorBool: "true",
                 // color: "red",
               })
-            // console.log(this.props?.singleStory)
           }
           style={styles.swatch}
           onClick={this.handleClick}

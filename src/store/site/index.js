@@ -1,5 +1,6 @@
 import {
   FETCH_SITE_INFO,
+  FETCH_MY_IP,
   _USER_OPENED_SUPPORT_CHATROOM_,
   OPEN_MAIL_COMPOSE,
   CLOSE_MAIL_COMPOSE,
@@ -13,6 +14,11 @@ const FULFILLED = "_FULFILLED";
 // eslint-disable-next-line
 export default (state = initState, { type, payload }) => {
   switch (type) {
+    case FETCH_MY_IP:
+      return {
+        ...state,
+        ip: payload
+      }
     case FETCH_SITE_INFO + FULFILLED:
       return onFetchSiteInfo(state, payload);
     case _USER_OPENED_SUPPORT_CHATROOM_:

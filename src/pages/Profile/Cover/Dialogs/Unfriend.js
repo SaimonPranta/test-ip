@@ -8,7 +8,6 @@ import {
 } from "@material-ui/core";
 
 export default ({ open, close, action, working, name, setunFollowAfterRequest }) => {
-  console.log(action);
   return (
     <Dialog open={open} fullWidth maxWidth="sm" onClose={close}>
       <DialogTitle>

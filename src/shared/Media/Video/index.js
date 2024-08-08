@@ -81,21 +81,7 @@ export default ({ next, prev, src, title = "", duration }) => {
   let video = useRef();
 
 
-  // window.addEventListener("scroll", () => {
-  //   if (elem) {
-  //     const rect = elem.getBoundingClientRect();
-
-  //     console.log(rect.top, 'rect')
-  //     console.log(window.innerHeight,'window height')
-
-
-  //     if (rect.top < 0 ) {
-  //       elem.pause();
-  //       setPaused(true);
-  //       console.log("test onscroll 1")
-  //     }
-  //   }
-  // });
+ 
 
   useEffect(() => {
     let activeTimeout;

@@ -105,9 +105,6 @@ function FilterCuc({
     return new Date(year, month, 0).getDate();
   }
 
-  // // console.log("month year", daysInMonth(2, slelctedyear));
-  // // console.log("slelctedmonth", typeof slelctedmonth);
-  // // console.log("slelctedyear", typeof slelctedyear);
 
   //   month changer
   const handleChange = (event) => {

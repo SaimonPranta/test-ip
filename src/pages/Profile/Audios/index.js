@@ -94,10 +94,7 @@ function Audios({ username, privacy, changePrivacy, history, isMe }) {
   //Thumb Image upload section end
 
   function onEdit(id) {
-    // console.log("id check -> " ,id);
     const e = media.find((i) => i.id === id);
-
-    // console.log("check 2 -> ", e )
 
     if (!e) {
       return;
@@ -197,7 +194,6 @@ function Audios({ username, privacy, changePrivacy, history, isMe }) {
   const handleReplacetag = (attachedlinkpictitle, name) => {
 
     const updateAttachedlinkpictitle = attachedlinkpictitle?.replaceAll("&lt;", "<")
-    // console.log(updateAttachedlinkpictitle)
     if (updateAttachedlinkpictitle?.includes('<script')) {
       return;
     }

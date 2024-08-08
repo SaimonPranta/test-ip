@@ -72,7 +72,6 @@ const Index = ({
         })
         .then((response) => {
           if (response.status === 201 || response.status === 200) {
-            console.log(response.data);
             setRender(!render);
           }
         });
@@ -83,7 +82,6 @@ const Index = ({
   };
 
   useEffect(() => {
-    console.log(reelComment);
   }, [reelComment]);
 
   useEffect(() => {
@@ -128,7 +126,6 @@ const Index = ({
         }
       })
       .catch((error) => {
-        console.log(error);
       });
   };
 

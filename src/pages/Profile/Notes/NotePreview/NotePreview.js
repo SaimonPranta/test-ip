@@ -23,9 +23,7 @@ function NotePreview({ }) {
   const [note, setNote] = useState({});
 
   // const { notes, setNotes, counts, setCounts } = getNotes(usernameNote);
-  // // console.log(notes);
   // const selectedNote = notes.filter((note) => note.id === noteId);
-  // // console.log(selectedNote);
 
   // data come from the server with component mount
   useEffect(() => {
@@ -34,7 +32,6 @@ function NotePreview({ }) {
       .get(`${BACKEND_URL}/notes-public/${noteLink}`, {
       })
       .then(({ data }) => {
-        console.log("data  coming", data)
         setNote(data);
         setWorking(false);
       })

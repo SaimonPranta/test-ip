@@ -57,7 +57,6 @@ function Poper({username, photoid, Fullphoto, handleOpen, photourl, photoPictitl
     fetch(getUrl(photourl, username))
       .then((res) => res.blob())
       .then((blob) => {
-        // console.log(media[0].types2, "file extension");
         let objectURL = URL.createObjectURL(blob);
         setDownloadFile(objectURL);
         setFileName(photoid + "." + "png");

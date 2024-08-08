@@ -18,7 +18,6 @@ const Privacy = () => {
         setPrivacy(data.content);
       })
       .catch((err) => {
-        console.log("something went wrong.")
       })
 
   }, []);

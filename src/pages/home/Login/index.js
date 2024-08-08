@@ -68,7 +68,6 @@ function Login({
         }
       })
       .catch((err) => {
-        console.log(err);
         setpassReset(false);
         setFace(2);
         setloading(false);

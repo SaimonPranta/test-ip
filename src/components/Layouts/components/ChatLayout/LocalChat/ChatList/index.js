@@ -32,7 +32,6 @@ const Index = ({ setSectionShow, setOpenChat, openChat, activeUserList }) => {
 
   useEffect(() => {
     socket.on("get-all-message", (data) => {
-      console.log("data", data);
       // setMessages(data);
     });
   }, [openChat]);

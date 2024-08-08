@@ -39,7 +39,6 @@ const initState = {
 };
 
 export default (state = initState, { type, payload }) => {
-  console.log(state, "state");
   let newPosts = [];
   switch (type) {
     // * Post stuff

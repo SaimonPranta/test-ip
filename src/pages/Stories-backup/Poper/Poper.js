@@ -14,7 +14,6 @@ export default function StorySettingAction({ privacy, setPrivacy }) {
     setAnchorEl(event.currentTarget);
   };
 
-  console.log("privacy", privacy);
 
   const handleClose = () => {
     setAnchorEl(null);

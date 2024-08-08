@@ -5,14 +5,12 @@ import Draggable from "react-draggable";
 
 class StoryPreview extends React.Component {
   eventLogger = (e, data) => {
-    console.log("eventLogger: ", data);
   };
   handleDrag = (e, data) => {
     this.props.setTextPositionX(data.deltaX);
     this.props.setTextPositionY(data.deltaY);
     this.props.setTextPositiondelX(data.lastX);
     this.props.setTextPositiondelY(data.lastY);
-    console.log("handleDrag: ", data);
   };
   state = {
     width: 200,
@@ -82,7 +80,6 @@ const ImageBreakPoint = () => {
 
   const randomEventHandler = () => {
     axios.put("/dynamic/Section").then((res, req) => {
-      console.log(res.data);
     });
   };
   const clickHandeler = (e) => {};
